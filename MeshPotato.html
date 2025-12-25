@@ -13,6 +13,7 @@
 
       body {
         display: flex;
+        overflow: hidden;
       }
 
       structured-content-container,
@@ -34,6 +35,16 @@
         border: 0;
         display: block;
       }
+
+      structured-content-container {
+        flex: 1 1 auto;
+      }
+
+      structured-content-container,
+      .iframe-container iframe {
+        width: 100vw;
+        height: 100vh;
+      }
     </style>
   </head>
   <body>
@@ -41,7 +52,7 @@
       _ngcontent-ng-c4264735325=""
       class="model-response-text has-thoughts ng-star-inserted"
       _nghost-ng-c2988614715=""
-      style="height: auto;"
+      style="height: 100vh; width: 100vw;"
     >
       <div _ngcontent-ng-c2988614715="" class="container">
         <message-content
