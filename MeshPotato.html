@@ -3,13 +3,56 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>MeshPotato</title>
+    <style>
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+      }
+
+      body {
+        display: flex;
+        overflow: hidden;
+      }
+
+      structured-content-container,
+      structured-content-container > .container,
+      message-content,
+      .markdown,
+      .attachment-container,
+      response-element,
+      generative-ui-frame,
+      .generative-ui-frame-container,
+      .iframe-components-container,
+      .iframe-container,
+      .iframe-container iframe {
+        width: 100%;
+        height: 100%;
+      }
+
+      .iframe-container iframe {
+        border: 0;
+        display: block;
+      }
+
+      structured-content-container {
+        flex: 1 1 auto;
+      }
+
+      structured-content-container,
+      .iframe-container iframe {
+        width: 100vw;
+        height: 100vh;
+      }
+    </style>
   </head>
   <body>
     <structured-content-container
       _ngcontent-ng-c4264735325=""
       class="model-response-text has-thoughts ng-star-inserted"
       _nghost-ng-c2988614715=""
-      style="height: auto;"
+      style="height: 100vh; width: 100vw;"
     >
       <div _ngcontent-ng-c2988614715="" class="container">
         <message-content
