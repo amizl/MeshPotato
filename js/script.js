@@ -46,7 +46,6 @@ const servicesData = [
     }
 ];
 
-// --- Modal Logic ---
 function openModal(index) {
     const modal = document.getElementById('service-modal');
     const title = document.getElementById('modal-title');
@@ -54,13 +53,17 @@ function openModal(index) {
     const icon = document.getElementById('modal-icon');
     const data = servicesData[index];
 
-    if (data) {
-        title.textContent = data.title;
-        desc.textContent = data.desc;
-        icon.textContent = data.icon;
-        modal.classList.add('open');
-    }
+    if (!data) return;
+
+    title.textContent = data.title;
+    icon.textContent = data.icon;
+
+    // IMPORTANT: render HTML, not text
+    desc.innerHTML = data.desc;
+
+    modal.classList.add('open');
 }
+
 
 function closeModal() {
     document.getElementById('service-modal').classList.remove('open');
@@ -130,6 +133,34 @@ function playClickSound() {
         // Ignore errors if Tone.js isn't ready or audio context is blocked
     }
 }
+// New! Solo Trap deep-dive modal
+servicesData.push({
+    title: "Why Late Hiring Fails",
+    icon: "warning",
+    desc: `
+<p>Execution complexity grows faster than individual capacity.</p>
+
+<p>Once a solo founder exceeds the execution limit:</p>
+
+<ul class="list-disc pl-6 space-y-2">
+  <li>Work becomes non-divisible due to system coupling</li>
+  <li>Knowledge is undocumented and trapped in one head</li>
+  <li>New hires create onboarding drag before output</li>
+  <li>Bug surfaces expand faster than feature velocity</li>
+  <li>Communication overhead replaces production time</li>
+</ul>
+
+<p class="mt-4">
+Adding people at this stage does not accelerate progress.
+It increases friction, burn, and rewrite risk.
+</p>
+
+<p class="font-bold mt-4">
+Teams must form early so complexity grows alongside capacity, not against it.
+</p>
+`
+});
+
 
 // Initialize Deck
 updateSlide();
