@@ -139,9 +139,7 @@ servicesData.push({
     icon: "warning",
     desc: `
 <p>Execution complexity grows faster than individual capacity.</p>
-
-<p>Once a solo founder exceeds the execution limit:</p>
-
+<p></p><br>
 <ul class="list-disc pl-6 space-y-2">
   <li>Work becomes non-divisible due to system coupling</li>
   <li>Knowledge is undocumented and trapped in one head</li>
@@ -151,8 +149,7 @@ servicesData.push({
 </ul>
 
 <p class="mt-4">
-Adding people at this stage does not accelerate progress.
-It increases friction, burn, and rewrite risk.
+If you add people too late, you don’t gain speed - you gain friction, burn, and rewrite risk.
 </p>
 
 <p class="font-bold mt-4">
