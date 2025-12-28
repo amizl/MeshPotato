@@ -243,15 +243,20 @@
                 data-driven formation.
             </p>
             <div class="flex flex-wrap justify-center gap-8">
-                <div class="module p-6 w-64 bg-white flex flex-col items-center gap-4">
+                <div class="module p-6 w-64 bg-white flex flex-col items-center gap-4 cursor-pointer"
+                    onclick="openModal(servicesData.length - 3)">
                     <span class="material-symbols-outlined text-5xl">psychology</span>
                     <span class="font-bold uppercase tracking-wider">Psychometrics</span>
                 </div>
-                <div class="module p-6 w-64 bg-white flex flex-col items-center gap-4 border-[#ff3300] text-[#ff3300]">
+
+                <div class="module p-6 w-64 bg-white flex flex-col items-center gap-4 border-[#ff3300] text-[#ff3300] cursor-pointer"
+                    onclick="openModal(servicesData.length - 2)">
                     <span class="material-symbols-outlined text-5xl">code</span>
                     <span class="font-bold uppercase tracking-wider">Tech Vetting</span>
                 </div>
-                <div class="module p-6 w-64 bg-white flex flex-col items-center gap-4">
+
+                <div class="module p-6 w-64 bg-white flex flex-col items-center gap-4 cursor-pointer"
+                    onclick="openModal(servicesData.length - 1)">
                     <span class="material-symbols-outlined text-5xl">history</span>
                     <span class="font-bold uppercase tracking-wider">Track Record</span>
                 </div>
@@ -264,7 +269,11 @@
             <div class="border-b-4 border-black mb-12 pb-2">
                 <h2 class="text-5xl font-bold uppercase">THE FORMATION ENGINE</h2>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+            <!-- 5-column layout on desktop -->
+            <div class="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr_auto_1fr] gap-6 items-center">
+
+                <!-- 01 INPUT -->
                 <div class="bg-white border-2 border-black p-0">
                     <div class="bg-black text-white p-3 font-mono font-bold">01_INPUT</div>
                     <div class="p-8">
@@ -277,11 +286,18 @@
                         </ul>
                     </div>
                 </div>
+
+                <!-- Arrow 1 -->
+                <div class="hidden md:flex justify-center">
+                    <span class="text-[#ff3300] text-3xl leading-none">➔</span>
+                </div>
+
+                <!-- 02 PROCESS -->
                 <div
                     class="bg-[#ff3300] text-white border-2 border-black p-0 transform -translate-y-4 shadow-[10px_10px_0px_black]">
                     <div class="bg-black text-white p-3 font-mono font-bold border-b-2 border-white">02_PROCESS</div>
                     <div class="p-8">
-                        <span class="material-symbols-outlined text-4xl mb-4 animate-spin-slow">settings</span>
+                        <span class="material-symbols-outlined text-4xl mb-4">settings</span>
                         <h3 class="text-2xl font-bold mb-4">The Match</h3>
                         <div
                             class="bg-white text-black p-2 text-xs font-mono text-center font-bold border-2 border-black">
@@ -290,6 +306,13 @@
                         <p class="mt-4 text-sm font-medium">Constraint-based formation system.</p>
                     </div>
                 </div>
+
+                <!-- Arrow 2 -->
+                <div class="hidden md:flex justify-center">
+                    <span class="text-[#ff3300] text-3xl leading-none">➔</span>
+                </div>
+
+                <!-- 03 OUTPUT -->
                 <div class="bg-white border-2 border-black p-0">
                     <div class="bg-black text-white p-3 font-mono font-bold">03_OUTPUT</div>
                     <div class="p-8">
@@ -302,6 +325,7 @@
                         </ul>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>

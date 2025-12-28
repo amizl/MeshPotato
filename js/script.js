@@ -158,6 +158,82 @@ Teams must form early so complexity grows alongside capacity, not against it.
 `
 });
 
+// New! Psychometrics deep dive
+servicesData.push({
+    title: "Psychometrics",
+    icon: "psychology",
+    desc: `
+<p><strong>Purpose:</strong> Predict execution compatibility before teams form.</p>
+
+<ul class="list-disc pl-6 space-y-2">
+  <li>How individuals approach complex problem-solving</li>
+  <li>Risk tolerance and ability to operate under ambiguity</li>
+  <li>Ownership mindset versus contribution preference</li>
+  <li>Response to conflict, feedback, and iteration pressure</li>
+  <li>Consistency, stamina, and behavior under deadlines</li>
+</ul>
+
+<p class="mt-4">
+This is not personality typing.
+</p>
+<p class="mt-4">
+It models execution fit using decision patterns and observed shipping behavior.
+</p>
+`
+});
+
+
+// New! Tech Vetting deep dive
+servicesData.push({
+    title: "Tech Vetting",
+    icon: "code",
+    desc: `
+<p><strong>Purpose:</strong> Verify real-world technical execution, not resumes.</p>
+
+<h4 class="font-bold mt-4">What we validate</h4>
+<ul class="list-disc pl-6 space-y-2">
+  <li>Hands-on technical testing (role-specific)</li>
+  <li>Code or asset review on real production samples</li>
+  <li>System-level thinking and debugging ability</li>
+  <li>Pipeline awareness (builds, tooling, integration)</li>
+</ul>
+
+<h4 class="font-bold mt-4">Endorsements</h4>
+<ul class="list-disc pl-6 space-y-2">
+  <li>Peer endorsements from verified shippers</li>
+  <li>Cross-role validation (e.g. designer ↔ engineer)</li>
+</ul>
+
+<h4 class="font-bold mt-4">Team Leader Interview</h4>
+<p>
+Short structured interview focused on decision-making, tradeoffs, and execution ownership.
+</p>
+`
+});
+
+// New! Track Record deep dive
+servicesData.push({
+    title: "Track Record",
+    icon: "history",
+    desc: `
+<p><strong>Purpose:</strong> Ground trust in shipped reality.</p>
+
+<ul class="list-disc pl-6 space-y-2">
+  <li>Shipped games (links to Steam, console, mobile)</li>
+  <li>Role on each project (not just credits)</li>
+  <li>Companies or studios worked in</li>
+  <li>Total years of relevant experience</li>
+  <li>Team size and production scope</li>
+</ul>
+
+<h4 class="font-bold mt-4">Reputation Signals</h4>
+<ul class="list-disc pl-6 space-y-2">
+  <li>Endorsements from former teammates</li>
+  <li>Repeat collaboration history</li>
+  <li>Survivorship across multiple projects</li>
+</ul>
+`
+});
 
 // Initialize Deck
 updateSlide();
