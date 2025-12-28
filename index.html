@@ -94,32 +94,34 @@
             <div class="absolute top-10 left-0 w-32 h-2 bg-black"></div>
             <div class="absolute top-14 left-0 w-16 h-2 bg-accent-color"></div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <!-- Grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-16 items-center"> <!-- New! -->
 
                 <!-- Left Column -->
-                <div>
+                <div class="lg:col-span-2"> <!-- New! -->
                     <p class="font-mono text-sm tracking-widest mb-6 uppercase">
                         The Hidden Advantage
                     </p>
 
-                    <h2 class="text-6xl font-bold uppercase leading-tight mb-10">
-                        Structured Access<br>
-                        <span class="text-[#ff3300]">Changes Everything</span>
+                    <h2 class="text-7xl font-bold uppercase leading-tight mb-10">
+                        UNLOCKING INDIE CREATIVITY<br>
+                        <span class="text-[#ff3300]">AT SCALE</span>
                     </h2>
 
                     <div class="w-full h-2 bg-black mb-10"></div>
 
                     <p class="text-2xl font-medium leading-relaxed">
-                        You gain structured access to the creative pool of
+                        The indie game world holds massive untapped
                         <span class="font-bold underline decoration-[#ff3300] decoration-4">
-                            solo game talent
-                        </span>,
-                        ready to scale when execution demands it.
+                            creative talent.
+                        </span>
+                        <br /> <!-- New! -->
+                        MeshPotato turns that hidden capacity into execution-ready teams.
                     </p>
                 </div>
 
                 <!-- Right Column -->
-                <div class="module p-10 bg-white">
+                <div class="lg:col-span-1 module p-10 bg-white"> <!-- New! -->
                     <h3 class="text-3xl font-bold mb-6">
                         The Real Challenge
                     </h3>
@@ -426,31 +428,60 @@
     </div>
 
     <div class="slide" id="slide-9">
-        <h2 class="text-6xl font-bold mb-16 text-center">Business Model</h2>
-        <div class="w-full max-w-7xl grid grid-cols-1 md:grid-cols-4 gap-0 border-2 border-black">
+        <h2 class="text-6xl font-bold mb-16 text-center uppercase">Revenue Streams</h2>
+
+        <div class="w-full max-w-7xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 border-2 border-black">
+
             <div
-                class="p-8 border-b-2 md:border-b-0 md:border-r-2 border-black hover:bg-[#ff3300] hover:text-white transition-colors group text-center">
+                class="p-8 border-b-2 md:border-r-2 border-black hover:bg-[#ff3300] hover:text-white transition-colors group">
                 <span class="material-symbols-outlined text-4xl mb-4">percent</span>
-                <h3 class="text-2xl font-bold mb-2">Revenue Share</h3>
-                <p class="text-sm font-medium">10-20% of gross revenue.</p>
+                <h3 class="text-2xl font-bold mb-2 uppercase">Revenue Share</h3>
+                <p class="text-sm font-medium">
+                    Percentage of revenue from successfully shipped games.
+                </p>
             </div>
+
             <div
-                class="p-8 border-b-2 md:border-b-0 md:border-r-2 border-black hover:bg-[#ff3300] hover:text-white transition-colors group text-center">
+                class="p-8 border-b-2 lg:border-r-2 border-black hover:bg-[#ff3300] hover:text-white transition-colors group">
                 <span class="material-symbols-outlined text-4xl mb-4">groups</span>
-                <h3 class="text-2xl font-bold mb-2">Deployment</h3>
-                <p class="text-sm font-medium">Fees for "SWAT" teams.</p>
+                <h3 class="text-2xl font-bold mb-2 uppercase">Team Deployment</h3>
+                <p class="text-sm font-medium">
+                    Fees for deploying pre-formed teams to external clients.
+                </p>
             </div>
+
             <div
-                class="p-8 border-b-2 md:border-b-0 md:border-r-2 border-black hover:bg-[#ff3300] hover:text-white transition-colors group text-center">
-                <span class="material-symbols-outlined text-4xl mb-4">construction</span>
-                <h3 class="text-2xl font-bold mb-2">Premium</h3>
-                <p class="text-sm font-medium">Paid tools & templates.</p>
+                class="p-8 border-b-2 md:border-r-0 border-black hover:bg-[#ff3300] hover:text-white transition-colors group">
+                <span class="material-symbols-outlined text-4xl mb-4">lock</span>
+                <h3 class="text-2xl font-bold mb-2 uppercase">Execution Framework</h3>
+                <p class="text-sm font-medium">
+                    Paid access to platform tools and execution systems.
+                </p>
             </div>
-            <div class="p-8 hover:bg-[#ff3300] hover:text-white transition-colors group text-center">
-                <span class="material-symbols-outlined text-4xl mb-4">theater_comedy</span>
-                <h3 class="text-2xl font-bold mb-2">Sponsors</h3>
-                <p class="text-sm font-medium">Engine partnerships.</p>
+
+            <div class="p-8 md:border-r-2 border-black hover:bg-[#ff3300] hover:text-white transition-colors group">
+                <span class="material-symbols-outlined text-4xl mb-4">handshake</span>
+                <h3 class="text-2xl font-bold mb-2 uppercase">Sponsored Projects</h3>
+                <p class="text-sm font-medium">
+                    Engine and tooling partners sponsoring execution-backed projects.
+                </p>
             </div>
+
+            <div class="p-8 lg:border-r-2 border-black hover:bg-[#ff3300] hover:text-white transition-colors group">
+                <span class="material-symbols-outlined text-4xl mb-4">event</span>
+                <h3 class="text-2xl font-bold mb-2 uppercase">Events</h3>
+                <p class="text-sm font-medium">
+                    Conferences, summits, and ecosystem partnerships.
+                </p>
+            </div>
+
+            <div class="p-8 bg-black text-white">
+                <h3 class="text-2xl font-bold mb-2 uppercase">Why This Works</h3>
+                <p class="text-sm font-medium">
+                    Revenue is tied to execution, not listings, ads, or hype.
+                </p>
+            </div>
+
         </div>
     </div>
 
