@@ -133,6 +133,7 @@ function playClickSound() {
         // Ignore errors if Tone.js isn't ready or audio context is blocked
     }
 }
+const SOLO_TRAP_INDEX = servicesData.length;
 // New! Solo Trap deep-dive modal
 servicesData.push({
     title: "Why Late Hiring Fails",
