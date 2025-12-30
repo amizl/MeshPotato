@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>MeshPotato Investor Deck</title>
-    
+
     <script src="https://cdn.tailwindcss.com/"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
-    <link type="text/css" href="https://fonts.googleapis.com/css2?family=Google+Symbols:opsz,wght,FILL,GRAD,ROND@24,400,0,0,50&icon_names=link" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link type="text/css"
+        href="https://fonts.googleapis.com/css2?family=Google+Symbols:opsz,wght,FILL,GRAD,ROND@24,400,0,0,50&icon_names=link"
+        rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.js"></script>
 
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <div class="swiss-grid"></div>
-    
+
     <div class="progress-container">
         <div class="progress-fill" id="progress-bar" style="width: 9.09091%;"></div>
     </div>
@@ -45,7 +51,7 @@
                 Description goes here.
             </div>
             <div class="mt-8 pt-4 border-t-2 border-gray-200">
-                <span class="font-mono text-sm bg-black text-white px-2 py-1">AVAILABLE IN V1.0</span>
+                <span class="font-mono text-sm bg-black text-white px-2 py-1">CORE INSIGHT</span>
             </div>
         </div>
     </div>
@@ -62,8 +68,8 @@
                     <p class="text-2xl font-bold tracking-widest mt-6 uppercase">The Team Formation Engine</p>
                     <div class="w-full h-2 bg-black my-8"></div>
                     <h2 class="text-4xl font-light leading-tight">
-                        Great games fail because<br>
-                        <span class="highlight-bar mt-2">great teams never form.</span>
+                        GREAT GAMES BEGIN WITH<br>
+                        <span class="highlight-bar mt-2">GREAT TEAMS WORKING TOGETHER</span>
                     </h2>
                     <button class="swiss-btn mt-12" onclick="nextSlide()">
                         Start Deck <span class="material-symbols-outlined">arrow_downward</span>
@@ -71,32 +77,104 @@
                 </div>
                 <div class="relative">
                     <div class="module p-4 bg-white rotate-2 hover:rotate-0 transition-transform">
-                        <img src="../images/team.png" alt="Team Connection" class="w-full h-auto grayscale contrast-125 border border-black">
+                        <img src="../images/team.png" alt="Team Connection"
+                            class="w-full h-auto grayscale contrast-125 border border-black">
                     </div>
-                    <div class="absolute -z-10 -bottom-10 -right-10 w-40 h-40 bg-accent-color rounded-full mix-blend-multiply opacity-80"></div>
+                    <div
+                        class="absolute -z-10 -bottom-10 -right-10 w-40 h-40 bg-accent-color rounded-full mix-blend-multiply opacity-80">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
     <div class="slide" id="slide-2">
+        <div class="w-full max-w-7xl h-full flex flex-col justify-center">
+
+            <!-- Top Accent -->
+            <div class="absolute top-10 left-0 w-32 h-2 bg-black"></div>
+            <div class="absolute top-14 left-0 w-16 h-2 bg-accent-color"></div>
+
+            <!-- Grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-16 items-center"> <!-- New! -->
+
+                <!-- Left Column -->
+                <div class="lg:col-span-2"> <!-- New! -->
+                    <p class="font-mono text-sm tracking-widest mb-6 uppercase">
+                        The Hidden Advantage
+                    </p>
+
+                    <h2 class="text-7xl font-bold uppercase leading-tight mb-10">
+                        UNLOCKING INDIE CREATIVITY<br>
+                        <span class="text-[#ff3300]">AT SCALE</span>
+                    </h2>
+
+                    <div class="w-full h-2 bg-black mb-10"></div>
+
+                    <p class="text-2xl font-medium leading-relaxed">
+                        The indie game world holds massive untapped
+                        <span class="font-bold underline decoration-[#ff3300] decoration-4">
+                            creative talent.
+                        </span>
+                        <br /> <!-- New! -->
+                        MeshPotato turns that hidden capacity into execution-ready teams.
+                    </p>
+                </div>
+
+                <!-- Right Column -->
+                <div class="lg:col-span-1 module p-10 bg-white"> <!-- New! -->
+                    <h3 class="text-3xl font-bold mb-6">
+                        The Real Challenge
+                    </h3>
+
+                    <p class="text-xl leading-relaxed text-gray-700">
+                        Talent and creativity are not the bottlenecks.
+                    </p>
+
+                    <p class="text-xl leading-relaxed text-gray-700 mt-4">
+                        They fail because game development is a
+                        <span class="font-bold text-[#ff3300]">
+                            non-linear execution challenge
+                        </span>.
+                    </p>
+
+                    <div class="mt-8 border-t-4 border-black pt-6">
+                        <p class="font-mono text-sm uppercase tracking-widest text-gray-500">
+                            Execution does not scale linearly with people
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="slide" id="slide-3">
+        <!-- New! Click-anywhere overlay for Solo Trap -->
+        <div class="absolute inset-0 z-30 cursor-pointer" onclick="openModal(SOLO_TRAP_INDEX)">
+        </div>
+        <span
+            class="absolute top-10 right-10 font-mono text-sm bg-[#ff3300] text-white px-2 py-1 z-40 pointer-events-none">
+            CLICK FOR DETAILS
+        </span>
         <div class="w-full max-w-7xl">
             <h2 class="text-7xl font-bold mb-12 uppercase border-b-4 border-black pb-4 inline-block">The Solo Trap</h2>
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
                 <div class="space-y-8">
-                    <div class="module p-8 bg-white">
+                    <div class="module p-8 bg-white solo-trap-glow">
                         <h3 class="text-3xl font-bold mb-4">Execution <span class="text-[#ff3300]">≠</span> Linear</h3>
                         <p class="text-xl leading-relaxed text-gray-700">
                             Solo capacity is static. <br>
-                            Game complexity scales <span class="font-bold underline decoration-[#ff3300] decoration-4">exponentially</span>.
+                            Game complexity scales <span
+                                class="font-bold underline decoration-[#ff3300] decoration-4">exponentially</span>.
                         </p>
                     </div>
                     <p class="text-2xl font-bold border-l-8 border-[#ff3300] pl-6 py-2">
                         Once timelines slip, recovery is impossible. Team formation must happen early.
                     </p>
                 </div>
-                <div class="module p-0 h-96 relative bg-white flex items-end">
-                    <div class="absolute top-4 left-4 font-mono text-xs bg-black text-white px-2 py-1">FIGURE 1.1</div>
+                <div class="module p-0 h-96 relative bg-white flex items-end solo-trap-glow">
+                    <div class="absolute top-4 left-4 font-mono text-xs bg-black text-white px-2 py-1">THE BREAKING
+                        POINT</div>
                     <svg class="w-full h-full p-8" viewBox="0 0 400 250">
                         <line stroke="#eee" stroke-width="1" x1="40" x2="380" y1="40" y2="40"></line>
                         <line stroke="#eee" stroke-width="1" x1="40" x2="380" y1="100" y2="100"></line>
@@ -104,11 +182,14 @@
                         <line stroke="black" stroke-width="3" x1="40" x2="380" y1="220" y2="220"></line>
                         <line stroke="black" stroke-width="3" x1="40" x2="40" y1="220" y2="20"></line>
                         <text font-family="Inter" font-size="10" font-weight="bold" x="350" y="240">TIME</text>
-                        <text font-family="Inter" font-size="10" font-weight="bold" style="writing-mode: tb;" x="10" y="30">EFFORT</text>
-                        <path d="M 40 180 L 380 180" fill="none" stroke="#333" stroke-dasharray="5,5" stroke-width="2"></path>
+                        <text font-family="Inter" font-size="10" font-weight="bold" style="writing-mode: tb;" x="10"
+                            y="30">EFFORT</text>
+                        <path d="M 40 180 L 380 180" fill="none" stroke="#333" stroke-dasharray="5,5" stroke-width="2">
+                        </path>
                         <text fill="#666" font-family="Oswald" font-size="12" x="250" y="170">SOLO LIMIT</text>
                         <path d="M 40 220 Q 200 210 380 20" fill="none" stroke="#ff3300" stroke-width="4"></path>
-                        <text fill="#ff3300" font-family="Oswald" font-size="14" font-weight="bold" x="280" y="50">SCOPE CREEP</text>
+                        <text fill="#ff3300" font-family="Oswald" font-size="14" font-weight="bold" x="280" y="50">SCOPE
+                            CREEP</text>
                         <path d="M 250 180 L 380 30 L 380 180 Z" fill="#ff3300" opacity="0.1"></path>
                     </svg>
                 </div>
@@ -116,28 +197,32 @@
         </div>
     </div>
 
-    <div class="slide" id="slide-3">
+    <div class="slide" id="slide-4">
         <div class="w-full max-w-6xl">
             <div class="flex items-center gap-4 mb-16">
                 <div class="h-4 w-4 bg-[#ff3300]"></div>
                 <h2 class="text-6xl font-bold uppercase m-0">Systemic Failure</h2>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-0 border-2 border-black">
-                <div class="bg-white p-12 border-b-2 md:border-b-0 md:border-r-2 border-black hover:bg-gray-50 transition-colors group">
+                <div class="bg-white p-12 border-b-2 md:border-b-0 md:border-r-2 border-black hover:bg-gray-50 transition-colors group cursor-pointer"
+                    onclick="openModal(SOLO_TRAP_INDEX)">
                     <div class="flex justify-between items-start mb-6">
                         <span class="font-mono text-sm text-gray-500">ERROR_01</span>
                         <span class="material-symbols-outlined text-5xl text-[#ff3300]">timer_off</span>
                     </div>
                     <h3 class="text-4xl font-bold mb-4 group-hover:translate-x-2 transition-transform">Too Late</h3>
-                    <p class="text-lg text-gray-700 font-medium">Teams form after architecture and timelines are locked.</p>
+                    <p class="text-lg text-gray-700 font-medium">Teams form after architecture and timelines are locked.
+                    </p>
                 </div>
                 <div class="bg-white p-12 hover:bg-gray-50 transition-colors group">
                     <div class="flex justify-between items-start mb-6">
                         <span class="font-mono text-sm text-gray-500">ERROR_02</span>
                         <span class="material-symbols-outlined text-5xl text-[#ff3300]">group_off</span>
                     </div>
-                    <h3 class="text-4xl font-bold mb-4 group-hover:translate-x-2 transition-transform">Wrong Criteria</h3>
-                    <p class="text-lg text-gray-700 font-medium">Teams form based on friendship rather than skill compatibility.</p>
+                    <h3 class="text-4xl font-bold mb-4 group-hover:translate-x-2 transition-transform">Wrong Criteria
+                    </h3>
+                    <p class="text-lg text-gray-700 font-medium">Teams form based on friendship rather than skill
+                        compatibility.</p>
                 </div>
             </div>
             <div class="mt-16 bg-black text-white p-8 text-center">
@@ -146,24 +231,34 @@
         </div>
     </div>
 
-    <div class="slide" id="slide-4">
+    <div class="slide" id="slide-5">
         <div class="max-w-5xl w-full text-center">
             <h2 class="text-7xl font-bold mb-8 uppercase leading-none">
-                Talent <span class="text-[#ff3300]">→</span> Teams
+                <span class="inline-flex items-center gap-6">
+                    <span>Talent</span>
+                    <span class="text-[#ff3300] relative -top-2">→</span>
+                    <span>Teams</span>
+                </span>
             </h2>
             <p class="text-2xl font-medium mb-16 max-w-3xl mx-auto">
-                We convert individual talent into <span class="highlight-bar">shipping-capable</span> units through data-driven formation.
+                We convert individual talent into <span class="highlight-bar">shipping-capable</span> units through
+                data-driven formation.
             </p>
             <div class="flex flex-wrap justify-center gap-8">
-                <div class="module p-6 w-64 bg-white flex flex-col items-center gap-4">
+                <div class="module p-6 w-64 bg-white flex flex-col items-center gap-4 cursor-pointer"
+                    onclick="openModal(servicesData.length - 3)">
                     <span class="material-symbols-outlined text-5xl">psychology</span>
                     <span class="font-bold uppercase tracking-wider">Psychometrics</span>
                 </div>
-                <div class="module p-6 w-64 bg-white flex flex-col items-center gap-4 border-[#ff3300] text-[#ff3300]">
+
+                <div class="module p-6 w-64 bg-white flex flex-col items-center gap-4 border-[#ff3300] text-[#ff3300] cursor-pointer"
+                    onclick="openModal(servicesData.length - 2)">
                     <span class="material-symbols-outlined text-5xl">code</span>
                     <span class="font-bold uppercase tracking-wider">Tech Vetting</span>
                 </div>
-                <div class="module p-6 w-64 bg-white flex flex-col items-center gap-4">
+
+                <div class="module p-6 w-64 bg-white flex flex-col items-center gap-4 cursor-pointer"
+                    onclick="openModal(servicesData.length - 1)">
                     <span class="material-symbols-outlined text-5xl">history</span>
                     <span class="font-bold uppercase tracking-wider">Track Record</span>
                 </div>
@@ -171,12 +266,19 @@
         </div>
     </div>
 
-    <div class="slide" id="slide-5">
+    <div class="slide" id="slide-6">
         <div class="w-full max-w-7xl">
             <div class="border-b-4 border-black mb-12 pb-2">
-                <h2 class="text-5xl font-bold uppercase">The Formation Engine</h2>
+                <h2 class="text-5xl font-bold uppercase">THE FORMATION ENGINE</h2>
+                <span class="font-light normal-case block mt-2 text-xl">
+                    Not a matching system. An execution framework.
+                </span>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+            <!-- 5-column layout on desktop -->
+            <div class="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr_auto_1fr] gap-6 items-center">
+
+                <!-- 01 INPUT -->
                 <div class="bg-white border-2 border-black p-0">
                     <div class="bg-black text-white p-3 font-mono font-bold">01_INPUT</div>
                     <div class="p-8">
@@ -184,22 +286,38 @@
                         <h3 class="text-2xl font-bold mb-4">Deep Profile</h3>
                         <ul class="list-square pl-4 space-y-2 font-medium">
                             <li>Skill Verification</li>
-                            <li>Psych Profiling</li>
+                            <li>Compatibility profiling</li>
                             <li>Risk Tolerance</li>
                         </ul>
                     </div>
                 </div>
-                <div class="bg-[#ff3300] text-white border-2 border-black p-0 transform -translate-y-4 shadow-[10px_10px_0px_black]">
+
+                <!-- Arrow 1 -->
+                <div class="hidden md:flex justify-center">
+                    <span class="text-[#ff3300] text-3xl leading-none">➔</span>
+                </div>
+
+                <!-- 02 PROCESS -->
+                <div
+                    class="bg-[#ff3300] text-white border-2 border-black p-0 transform -translate-y-4 shadow-[10px_10px_0px_black]">
                     <div class="bg-black text-white p-3 font-mono font-bold border-b-2 border-white">02_PROCESS</div>
                     <div class="p-8">
-                        <span class="material-symbols-outlined text-4xl mb-4 animate-spin-slow">settings</span>
+                        <span class="material-symbols-outlined text-4xl mb-4">settings</span>
                         <h3 class="text-2xl font-bold mb-4">The Match</h3>
-                        <div class="bg-white text-black p-2 text-xs font-mono text-center font-bold border-2 border-black">
-                            LOCKED UNTIL ROLES FILLED
+                        <div
+                            class="bg-white text-black p-2 text-xs font-mono text-center font-bold border-2 border-black">
+                            OPTIMIZED FOR FULL ROLES
                         </div>
-                        <p class="mt-4 text-sm font-medium">Constraint-based formation system.</p>
+                        <p class="mt-4 text-sm font-medium">Opinionated, not restrictive</p>
                     </div>
                 </div>
+
+                <!-- Arrow 2 -->
+                <div class="hidden md:flex justify-center">
+                    <span class="text-[#ff3300] text-3xl leading-none">➔</span>
+                </div>
+
+                <!-- 03 OUTPUT -->
                 <div class="bg-white border-2 border-black p-0">
                     <div class="bg-black text-white p-3 font-mono font-bold">03_OUTPUT</div>
                     <div class="p-8">
@@ -212,53 +330,62 @@
                         </ul>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
 
-    <div class="slide" id="slide-6">
+    <div class="slide" id="slide-7">
         <div class="w-full max-w-7xl h-full flex flex-col">
             <div class="flex justify-between items-end mb-8 border-b-2 border-black pb-2">
                 <h2 class="text-5xl font-bold uppercase m-0">Platform Services</h2>
                 <span class="font-mono text-sm bg-[#ff3300] text-white px-2 py-1">CLICK FOR DETAILS</span>
             </div>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4 flex-grow overflow-y-auto custom-scroll pr-2">
-                <div class="border-2 border-gray-200 p-6 hover:border-black hover:bg-white hover:shadow-[5px_5px_0px_#ff3300] transition-all cursor-pointer group bg-white" onclick="openModal(0)">
+                <div class="border-2 border-gray-200 p-6 hover:border-black hover:bg-white hover:shadow-[5px_5px_0px_#ff3300] transition-all cursor-pointer group bg-white"
+                    onclick="openModal(0)">
                     <span class="material-symbols-outlined text-4xl mb-4 group-hover:text-[#ff3300]">rocket</span>
                     <h3 class="font-bold text-xl leading-tight mb-2 uppercase">Execution & Launch</h3>
                     <p class="text-xs font-mono text-gray-600 group-hover:text-black">Crowdfunding Deployment →</p>
                 </div>
-                <div class="border-2 border-gray-200 p-6 hover:border-black hover:bg-white hover:shadow-[5px_5px_0px_#ff3300] transition-all cursor-pointer group bg-white" onclick="openModal(1)">
+                <div class="border-2 border-gray-200 p-6 hover:border-black hover:bg-white hover:shadow-[5px_5px_0px_#ff3300] transition-all cursor-pointer group bg-white"
+                    onclick="openModal(1)">
                     <span class="material-symbols-outlined text-4xl mb-4 group-hover:text-[#ff3300]">trophy</span>
                     <h3 class="font-bold text-xl leading-tight mb-2 uppercase">Sponsored Projects</h3>
                     <p class="text-xs font-mono text-gray-600 group-hover:text-black">Milestone Funding →</p>
                 </div>
-                <div class="border-2 border-gray-200 p-6 hover:border-black hover:bg-white hover:shadow-[5px_5px_0px_#ff3300] transition-all cursor-pointer group bg-white" onclick="openModal(2)">
+                <div class="border-2 border-gray-200 p-6 hover:border-black hover:bg-white hover:shadow-[5px_5px_0px_#ff3300] transition-all cursor-pointer group bg-white"
+                    onclick="openModal(2)">
                     <span class="material-symbols-outlined text-4xl mb-4 group-hover:text-[#ff3300]">storefront</span>
                     <h3 class="font-bold text-xl leading-tight mb-2 uppercase">Assets & Tools</h3>
                     <p class="text-xs font-mono text-gray-600 group-hover:text-black">Internal Market →</p>
                 </div>
-                <div class="border-2 border-gray-200 p-6 hover:border-black hover:bg-white hover:shadow-[5px_5px_0px_#ff3300] transition-all cursor-pointer group bg-white" onclick="openModal(3)">
+                <div class="border-2 border-gray-200 p-6 hover:border-black hover:bg-white hover:shadow-[5px_5px_0px_#ff3300] transition-all cursor-pointer group bg-white"
+                    onclick="openModal(3)">
                     <span class="material-symbols-outlined text-4xl mb-4 group-hover:text-[#ff3300]">engineering</span>
                     <h3 class="font-bold text-xl leading-tight mb-2 uppercase">Specialist Pool</h3>
                     <p class="text-xs font-mono text-gray-600 group-hover:text-black">Mercenary Talent →</p>
                 </div>
-                <div class="border-2 border-gray-200 p-6 hover:border-black hover:bg-white hover:shadow-[5px_5px_0px_#ff3300] transition-all cursor-pointer group bg-white" onclick="openModal(4)">
+                <div class="border-2 border-gray-200 p-6 hover:border-black hover:bg-white hover:shadow-[5px_5px_0px_#ff3300] transition-all cursor-pointer group bg-white"
+                    onclick="openModal(4)">
                     <span class="material-symbols-outlined text-4xl mb-4 group-hover:text-[#ff3300]">campaign</span>
                     <h3 class="font-bold text-xl leading-tight mb-2 uppercase">Smart Visibility</h3>
                     <p class="text-xs font-mono text-gray-600 group-hover:text-black">Triggered Ads →</p>
                 </div>
-                <div class="border-2 border-gray-200 p-6 hover:border-black hover:bg-white hover:shadow-[5px_5px_0px_#ff3300] transition-all cursor-pointer group bg-white" onclick="openModal(5)">
+                <div class="border-2 border-gray-200 p-6 hover:border-black hover:bg-white hover:shadow-[5px_5px_0px_#ff3300] transition-all cursor-pointer group bg-white"
+                    onclick="openModal(5)">
                     <span class="material-symbols-outlined text-4xl mb-4 group-hover:text-[#ff3300]">query_stats</span>
                     <h3 class="font-bold text-xl leading-tight mb-2 uppercase">Player Signal</h3>
                     <p class="text-xs font-mono text-gray-600 group-hover:text-black">Validated Demand →</p>
                 </div>
-                <div class="border-2 border-gray-200 p-6 hover:border-black hover:bg-white hover:shadow-[5px_5px_0px_#ff3300] transition-all cursor-pointer group bg-white" onclick="openModal(6)">
+                <div class="border-2 border-gray-200 p-6 hover:border-black hover:bg-white hover:shadow-[5px_5px_0px_#ff3300] transition-all cursor-pointer group bg-white"
+                    onclick="openModal(6)">
                     <span class="material-symbols-outlined text-4xl mb-4 group-hover:text-[#ff3300]">forum</span>
                     <h3 class="font-bold text-xl leading-tight mb-2 uppercase">Structured Support</h3>
                     <p class="text-xs font-mono text-gray-600 group-hover:text-black">Goal-Driven Ops →</p>
                 </div>
-                <div class="border-2 border-gray-200 p-6 hover:border-black hover:bg-white hover:shadow-[5px_5px_0px_#ff3300] transition-all cursor-pointer group bg-white" onclick="openModal(7)">
+                <div class="border-2 border-gray-200 p-6 hover:border-black hover:bg-white hover:shadow-[5px_5px_0px_#ff3300] transition-all cursor-pointer group bg-white"
+                    onclick="openModal(7)">
                     <span class="material-symbols-outlined text-4xl mb-4 group-hover:text-[#ff3300]">school</span>
                     <h3 class="font-bold text-xl leading-tight mb-2 uppercase">Team Readiness</h3>
                     <p class="text-xs font-mono text-gray-600 group-hover:text-black">Training Tools →</p>
@@ -267,11 +394,12 @@
         </div>
     </div>
 
-    <div class="slide" id="slide-7">
+    <div class="slide" id="slide-8">
         <div class="max-w-6xl w-full flex flex-col md:flex-row gap-16 items-center">
             <div class="w-full md:w-1/2">
                 <h2 class="text-6xl font-bold uppercase mb-8">Hard to Copy</h2>
-                <p class="text-xl font-medium mb-8">We aren't a job board. We are the <span class="bg-[#ff3300] text-white px-2">Operating System</span>.</p>
+                <p class="text-xl font-medium mb-8">We aren't a job board. We are the <span
+                        class="bg-[#ff3300] text-white px-2">Operating System</span>.</p>
                 <div class="space-y-6">
                     <div class="module p-6 flex items-center gap-6">
                         <div class="text-5xl font-bold text-gray-200">1</div>
@@ -291,113 +419,205 @@
             </div>
             <div class="w-full md:w-1/2">
                 <div class="module p-2 bg-white">
-                   <!-- <img alt="Moat" class="w-full h-auto grayscale contrast-125" go-data-src="/gen?prompt=abstract+geometric+fortress+swiss+style+red+black+white&aspect=4:3" src="blob:https://04865dx38q4ehmrhz5x874xy0dliyqhk3fjcddkeoobclykt80-h845251650.scf.usercontent.goog/0db48e4a-1ef5-412b-92d7-7b4662c69c4f" style=""> -->
-                     <img src="../images/Moat.png" alt="Moat" class="w-full h-auto grayscale contrast-125 border border-black">
+                    <!-- <img alt="Moat" class="w-full h-auto grayscale contrast-125" go-data-src="/gen?prompt=abstract+geometric+fortress+swiss+style+red+black+white&aspect=4:3" src="blob:https://04865dx38q4ehmrhz5x874xy0dliyqhk3fjcddkeoobclykt80-h845251650.scf.usercontent.goog/0db48e4a-1ef5-412b-92d7-7b4662c69c4f" style=""> -->
+                    <img src="../images/Moat.png" alt="Moat"
+                        class="w-full h-auto grayscale contrast-125 border border-black">
                 </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="slide" id="slide-8">
-        <h2 class="text-6xl font-bold mb-16 text-center">Business Model</h2>
-        <div class="w-full max-w-7xl grid grid-cols-1 md:grid-cols-4 gap-0 border-2 border-black">
-            <div class="p-8 border-b-2 md:border-b-0 md:border-r-2 border-black hover:bg-[#ff3300] hover:text-white transition-colors group text-center">
-                <span class="material-symbols-outlined text-4xl mb-4">percent</span>
-                <h3 class="text-2xl font-bold mb-2">Revenue Share</h3>
-                <p class="text-sm font-medium">10-20% of gross revenue.</p>
-            </div>
-            <div class="p-8 border-b-2 md:border-b-0 md:border-r-2 border-black hover:bg-[#ff3300] hover:text-white transition-colors group text-center">
-                <span class="material-symbols-outlined text-4xl mb-4">groups</span>
-                <h3 class="text-2xl font-bold mb-2">Deployment</h3>
-                <p class="text-sm font-medium">Fees for "SWAT" teams.</p>
-            </div>
-            <div class="p-8 border-b-2 md:border-b-0 md:border-r-2 border-black hover:bg-[#ff3300] hover:text-white transition-colors group text-center">
-                <span class="material-symbols-outlined text-4xl mb-4">construction</span>
-                <h3 class="text-2xl font-bold mb-2">Premium</h3>
-                <p class="text-sm font-medium">Paid tools & templates.</p>
-            </div>
-            <div class="p-8 hover:bg-[#ff3300] hover:text-white transition-colors group text-center">
-                <span class="material-symbols-outlined text-4xl mb-4">theater_comedy</span>
-                <h3 class="text-2xl font-bold mb-2">Sponsors</h3>
-                <p class="text-sm font-medium">Engine partnerships.</p>
             </div>
         </div>
     </div>
 
     <div class="slide" id="slide-9">
-        <h2 class="text-5xl font-bold mb-12">The Landscape</h2>
-        <div class="w-full max-w-5xl module p-0 overflow-hidden">
-            <table class="w-full text-left border-collapse">
-                <thead class="bg-black text-white">
-                    <tr>
-                        <th class="p-6 uppercase text-sm tracking-wider">Model</th>
-                        <th class="p-6 uppercase text-sm tracking-wider">Example</th>
-                        <th class="p-6 uppercase text-sm tracking-wider">Focus</th>
-                        <th class="p-6 uppercase text-sm tracking-wider bg-[#ff3300]">MeshPotato</th>
-                    </tr>
-                </thead>
-                <tbody class="text-lg font-bold">
-                    <tr class="border-b border-gray-200 hover:bg-gray-50">
-                        <td class="p-6">Publishers</td>
-                        <td class="p-6 text-gray-500 font-normal">Devolver</td>
-                        <td class="p-6 font-normal">Capital & Marketing</td>
-                        <td class="p-6 text-[#ff3300] border-l-4 border-[#ff3300] bg-red-50">Team & Ops</td>
-                    </tr>
-                    <tr class="border-b border-gray-200 hover:bg-gray-50">
-                        <td class="p-6">Accelerators</td>
-                        <td class="p-6 text-gray-500 font-normal">Fury</td>
-                        <td class="p-6 font-normal">Game Pitch</td>
-                        <td class="p-6 text-[#ff3300] border-l-4 border-[#ff3300] bg-red-50">Human Structure</td>
-                    </tr>
-                    <tr class="hover:bg-gray-50">
-                        <td class="p-6">Gig Platforms</td>
-                        <td class="p-6 text-gray-500 font-normal">Upwork</td>
-                        <td class="p-6 font-normal">Transactional Labor</td>
-                        <td class="p-6 text-[#ff3300] border-l-4 border-[#ff3300] bg-red-50">Cohesive Units</td>
-                    </tr>
-                </tbody>
-            </table>
+        <h2 class="text-6xl font-bold mb-16 text-center uppercase">Revenue Streams</h2>
+
+        <div class="w-full max-w-7xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 border-2 border-black">
+
+            <div
+                class="p-8 border-b-2 md:border-r-2 border-black hover:bg-[#ff3300] hover:text-white transition-colors group">
+                <span class="material-symbols-outlined text-4xl mb-4">percent</span>
+                <h3 class="text-2xl font-bold mb-2 uppercase">Revenue Share</h3>
+                <p class="text-sm font-medium">
+                    Percentage of revenue from successfully shipped games.
+                </p>
+            </div>
+
+            <div
+                class="p-8 border-b-2 lg:border-r-2 border-black hover:bg-[#ff3300] hover:text-white transition-colors group">
+                <span class="material-symbols-outlined text-4xl mb-4">groups</span>
+                <h3 class="text-2xl font-bold mb-2 uppercase">Team Deployment</h3>
+                <p class="text-sm font-medium">
+                    Fees for deploying pre-formed teams to external clients.
+                </p>
+            </div>
+
+            <div
+                class="p-8 border-b-2 md:border-r-0 border-black hover:bg-[#ff3300] hover:text-white transition-colors group">
+                <span class="material-symbols-outlined text-4xl mb-4">lock</span>
+                <h3 class="text-2xl font-bold mb-2 uppercase">Execution Framework</h3>
+                <p class="text-sm font-medium">
+                    Paid access to platform tools and execution systems.
+                </p>
+            </div>
+
+            <div class="p-8 md:border-r-2 border-black hover:bg-[#ff3300] hover:text-white transition-colors group">
+                <span class="material-symbols-outlined text-4xl mb-4">handshake</span>
+                <h3 class="text-2xl font-bold mb-2 uppercase">Sponsored Projects</h3>
+                <p class="text-sm font-medium">
+                    Engine and tooling partners sponsoring execution-backed projects.
+                </p>
+            </div>
+
+            <div class="p-8 lg:border-r-2 border-black hover:bg-[#ff3300] hover:text-white transition-colors group">
+                <span class="material-symbols-outlined text-4xl mb-4">event</span>
+                <h3 class="text-2xl font-bold mb-2 uppercase">Events</h3>
+                <p class="text-sm font-medium">
+                    Conferences, summits, and ecosystem partnerships.
+                </p>
+            </div>
+
+            <div class="p-8 bg-black text-white">
+                <h3 class="text-2xl font-bold mb-2 uppercase">Why This Works</h3>
+                <p class="text-sm font-medium">
+                    Revenue is tied to execution, not listings, ads, or hype.
+                </p>
+            </div>
+
         </div>
     </div>
 
     <div class="slide" id="slide-10">
+        <div class="w-full max-w-6xl">
+
+            <!-- Title -->
+            <h2 class="text-5xl font-bold mb-4 uppercase">The Landscape</h2>
+
+            <!-- Framing subtitle -->
+            <p class="text-xl font-medium mb-10 max-w-4xl">
+                Existing models optimize money, pitches, or tasks.
+                <span class="font-bold text-[#ff3300]">MeshPotato optimizes team execution.</span>
+            </p>
+
+            <!-- Comparison Table -->
+            <div class="w-full module p-0 overflow-hidden">
+                <table class="w-full text-left border-collapse">
+
+                    <thead class="bg-black text-white">
+                        <tr>
+                            <th class="p-6 uppercase text-sm tracking-wider">Model</th>
+                            <th class="p-6 uppercase text-sm tracking-wider">Example</th>
+                            <th class="p-6 uppercase text-sm tracking-wider">Primary Focus</th>
+                            <th class="p-6 uppercase text-sm tracking-wider bg-[#ff3300]">
+                                MeshPotato<br>
+                                <span class="text-xs font-mono font-normal normal-case">
+                                    Execution Layer
+                                </span>
+                            </th>
+                        </tr>
+                    </thead>
+
+                    <tbody class="text-lg">
+
+                        <!-- Publishers -->
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-6 font-bold">Publishers</td>
+                            <td class="p-6 text-gray-500 font-normal">Devolver</td>
+                            <td class="p-6 font-normal">Capital & Marketing Leverage</td>
+                            <td class="p-6 font-bold text-[#ff3300] border-l-4 border-[#ff3300] bg-red-50">
+                                Team Execution & Operations
+                            </td>
+                        </tr>
+
+                        <!-- Accelerators -->
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-6 font-bold">Accelerators</td>
+                            <td class="p-6 text-gray-500 font-normal">Fury</td>
+                            <td class="p-6 font-normal">Pitch Coaching & Demo Access</td>
+                            <td class="p-6 font-bold text-[#ff3300] border-l-4 border-[#ff3300] bg-red-50">
+                                Team Formation & Role Architecture
+                            </td>
+                        </tr>
+
+                        <!-- Gig Platforms -->
+                        <tr class="hover:bg-gray-50">
+                            <td class="p-6 font-bold">Gig Platforms</td>
+                            <td class="p-6 text-gray-500 font-normal">Upwork</td>
+                            <td class="p-6 font-normal">One-Off Task Fulfillment</td>
+                            <td class="p-6 font-bold text-[#ff3300] border-l-4 border-[#ff3300] bg-red-50">
+                                Persistent, Shipping Teams
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Bottom takeaway -->
+            <div class="mt-10 bg-black text-white p-6 text-center">
+                <p class="text-2xl font-light">
+                    MeshPotato operates where games live or die.<br>
+                    <span class="font-bold">The execution layer.</span>
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="slide" id="slide-11">
         <h2 class="text-5xl font-bold mb-16 uppercase">Execution Plan</h2>
-        <div class="w-full max-w-6xl relative">
+        <div class="w-full max-w-7xl relative">
             <div class="absolute top-1/2 left-0 w-full h-1 bg-black -translate-y-1/2 z-0 hidden md:block"></div>
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <div class="module p-6 bg-white relative z-10 text-center">
-                    <div class="bg-black text-white inline-block px-2 py-1 text-xs font-mono font-bold mb-4">Q1-Q2</div>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 transform scale-110">
+
+                <div class="module p-10 bg-white relative z-10 text-center">
+                    <div class="bg-black text-white inline-block px-2 py-1 text-xs font-mono font-bold mb-4">Q1–Q2</div>
                     <h3 class="text-xl font-bold mb-2">Founding 100</h3>
-                    <p class="text-sm text-gray-600">Headhunting proven shippers.</p>
+                    <p class="text-sm text-gray-600">
+                        Curated intake of developers with demonstrated shipping history.
+                    </p>
                 </div>
-                <div class="module p-6 bg-white relative z-10 text-center">
+
+                <div class="module p-10 bg-white relative z-10 text-center">
                     <div class="bg-black text-white inline-block px-2 py-1 text-xs font-mono font-bold mb-4">Q3</div>
                     <h3 class="text-xl font-bold mb-2">Beta Engine</h3>
-                    <p class="text-sm text-gray-600">Refining the algo with real data.</p>
+                    <p class="text-sm text-gray-600">
+                        Validate formation logic using live projects and outcome data.
+                    </p>
                 </div>
-                <div class="module p-6 bg-white relative z-10 text-center">
+
+                <div class="module p-10 bg-white relative z-10 text-center">
                     <div class="bg-black text-white inline-block px-2 py-1 text-xs font-mono font-bold mb-4">Q4</div>
                     <h3 class="text-xl font-bold mb-2">Summit</h3>
-                    <p class="text-sm text-gray-600">Ecosystem activation event.</p>
+                    <p class="text-sm text-gray-600">
+                        Activate the ecosystem through live team and project formation.
+                    </p>
                 </div>
-                <div class="module p-6 bg-[#ff3300] text-white relative z-10 text-center border-black shadow-[10px_10px_0px_black] transform scale-110">
+
+                <div
+                    class="module p-10 bg-[#ff3300] text-white relative z-10 text-center border-black shadow-[10px_10px_0px_black] transform scale-105">
                     <div class="bg-white text-black inline-block px-2 py-1 text-xs font-mono font-bold mb-4">GOAL</div>
                     <h3 class="text-xl font-bold mb-2">Proof of Concept</h3>
-                    <p class="text-sm font-medium">Ship 1-2 complete titles.</p>
+                    <p class="text-sm font-medium">
+                        Ship 1–2 complete commercial titles formed entirely through the platform.
+                    </p>
                 </div>
+
             </div>
         </div>
     </div>
 
-    <div class="slide" id="slide-11">
+
+    <div class="slide" id="slide-12">
         <div class="w-full h-full flex flex-col justify-center items-center text-center">
             <div class="module p-16 max-w-4xl bg-white border-4 border-black">
                 <h2 class="text-6xl font-bold mb-4 uppercase">Partner with us</h2>
-                <p class="text-xl text-gray-600 mb-12 font-mono">Let's build the infrastructure for the next generation.</p>
+                <p class="text-xl text-gray-600 mb-12 font-mono">Let's build the infrastructure for the next generation.
+                </p>
                 <div class="flex flex-col items-center justify-center mb-12">
                     <span class="text-sm font-bold uppercase tracking-widest bg-gray-200 px-3 py-1 mb-4">Seeking</span>
                     <span class="mega-type font-bold leading-none tracking-tighter text-[#ff3300]">$500K</span>
-                    <span class="text-2xl font-bold uppercase mt-4 border-t-2 border-black pt-2 w-full">Seed Round</span>
+                    <span class="text-2xl font-bold uppercase mt-4 border-t-2 border-black pt-2 w-full">Seed
+                        Round</span>
                 </div>
                 <button class="swiss-btn text-2xl px-12 py-6 mx-auto">
                     Contact Us

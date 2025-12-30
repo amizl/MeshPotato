@@ -46,7 +46,6 @@ const servicesData = [
     }
 ];
 
-// --- Modal Logic ---
 function openModal(index) {
     const modal = document.getElementById('service-modal');
     const title = document.getElementById('modal-title');
@@ -54,13 +53,17 @@ function openModal(index) {
     const icon = document.getElementById('modal-icon');
     const data = servicesData[index];
 
-    if (data) {
-        title.textContent = data.title;
-        desc.textContent = data.desc;
-        icon.textContent = data.icon;
-        modal.classList.add('open');
-    }
+    if (!data) return;
+
+    title.textContent = data.title;
+    icon.textContent = data.icon;
+
+    // IMPORTANT: render HTML, not text
+    desc.innerHTML = data.desc;
+
+    modal.classList.add('open');
 }
+
 
 function closeModal() {
     document.getElementById('service-modal').classList.remove('open');
@@ -130,6 +133,108 @@ function playClickSound() {
         // Ignore errors if Tone.js isn't ready or audio context is blocked
     }
 }
+const SOLO_TRAP_INDEX = servicesData.length;
+// New! Solo Trap deep-dive modal
+servicesData.push({
+    title: "Why Late Hiring Fails",
+    icon: "warning",
+    desc: `
+<p>Execution complexity grows faster than individual capacity.</p>
+<p></p><br>
+<ul class="list-disc pl-6 space-y-2">
+  <li>Work becomes non-divisible due to system coupling</li>
+  <li>Knowledge is undocumented and trapped in one head</li>
+  <li>New hires create onboarding drag before output</li>
+  <li>Bug surfaces expand faster than feature velocity</li>
+  <li>Communication overhead replaces production time</li>
+</ul>
+
+<p class="mt-4">
+If you add people too late, you don’t gain speed - you gain friction, burn, and rewrite risk.
+</p>
+
+<p class="font-bold mt-4">
+Teams must form early so complexity grows alongside capacity, not against it.
+</p>
+`
+});
+
+// New! Psychometrics deep dive
+servicesData.push({
+    title: "Psychometrics",
+    icon: "psychology",
+    desc: `
+<p><strong>Purpose:</strong> Predict execution compatibility before teams form.</p>
+
+<ul class="list-disc pl-6 space-y-2">
+  <li>How individuals approach complex problem-solving</li>
+  <li>Risk tolerance and ability to operate under ambiguity</li>
+  <li>Ownership mindset versus contribution preference</li>
+  <li>Response to conflict, feedback, and iteration pressure</li>
+  <li>Consistency, stamina, and behavior under deadlines</li>
+</ul>
+
+<p class="mt-4">
+This is not personality typing.
+</p>
+<p class="mt-4">
+It models execution fit using decision patterns and observed shipping behavior.
+</p>
+`
+});
+
+
+// New! Tech Vetting deep dive
+servicesData.push({
+    title: "Tech Vetting",
+    icon: "code",
+    desc: `
+<p><strong>Purpose:</strong> Verify real-world technical execution, not resumes.</p>
+
+<h4 class="font-bold mt-4">What we validate</h4>
+<ul class="list-disc pl-6 space-y-2">
+  <li>Hands-on technical testing (role-specific)</li>
+  <li>Code or asset review on real production samples</li>
+  <li>System-level thinking and debugging ability</li>
+  <li>Pipeline awareness (builds, tooling, integration)</li>
+</ul>
+
+<h4 class="font-bold mt-4">Endorsements</h4>
+<ul class="list-disc pl-6 space-y-2">
+  <li>Peer endorsements from verified shippers</li>
+  <li>Cross-role validation (e.g. designer ↔ engineer)</li>
+</ul>
+
+<h4 class="font-bold mt-4">Team Leader Interview</h4>
+<p>
+Short structured interview focused on decision-making, tradeoffs, and execution ownership.
+</p>
+`
+});
+
+// New! Track Record deep dive
+servicesData.push({
+    title: "Track Record",
+    icon: "history",
+    desc: `
+<p><strong>Purpose:</strong> Ground trust in shipped reality.</p>
+
+<ul class="list-disc pl-6 space-y-2">
+  <li>Shipped games (links to Steam, console, mobile)</li>
+  <li>Role on each project (not just credits)</li>
+  <li>Companies or studios worked in</li>
+  <li>Total years of relevant experience</li>
+  <li>Team size and production scope</li>
+</ul>
+
+<h4 class="font-bold mt-4">Reputation Signals</h4>
+<ul class="list-disc pl-6 space-y-2">
+  <li>Endorsements from former teammates</li>
+  <li>Repeat collaboration history</li>
+  <li>Survivorship across multiple projects</li>
+</ul>
+`
+});
 
 // Initialize Deck
 updateSlide();
