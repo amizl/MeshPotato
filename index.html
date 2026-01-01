@@ -60,30 +60,46 @@
         <div class="w-full max-w-7xl h-full flex flex-col justify-center relative">
             <div class="absolute top-10 left-0 w-32 h-2 bg-black"></div>
             <div class="absolute top-14 left-0 w-16 h-2 bg-accent-color"></div>
+
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+                <!-- LEFT COLUMN -->
                 <div>
-                    <h1 class="mega-type font-bold mb-0">
-                        MESH<br><span class="text-[#ff3300]">POTATO</span>
-                    </h1>
-                    <p class="text-2xl font-bold tracking-widest mt-6 uppercase">The Team Formation Engine</p>
-                    <div class="w-full h-2 bg-black my-8"></div>
-                    <h2 class="text-4xl font-light leading-tight">
-                        GREAT GAMES BEGIN WITH<br>
-                        <span class="highlight-bar mt-2">GREAT TEAMS WORKING TOGETHER</span>
+                    <h2 class="mega-type font-bold mb-0">
+                        MESH<span class="text-[#ff3300]">POTATO</span>
                     </h2>
-                    <button class="swiss-btn mt-12" onclick="nextSlide()">
-                        Start Deck <span class="material-symbols-outlined">arrow_downward</span>
+
+                    <!-- Tighter spacing -->
+                    <p class="text-4xl font-bold tracking-widest mt-4 uppercase">
+                        Team Formation Engine
+                    </p>
+
+                    <!-- Reduced vertical gap -->
+                    <div class="w-full h-2 bg-black my-6"></div>
+
+                    <h4 class="text-5xl font-light leading-tight uppercase">
+                        form real teams<br>
+                        <span class="highlight-bar mt-2">
+                            from solo game creators
+                        </span>
+                    </h4>
+
+                    <button class="swiss-btn mt-10" onclick="nextSlide()">
+                        Why teams fail <span class="material-symbols-outlined">arrow_downward</span>
                     </button>
                 </div>
-                <div class="relative">
-                    <div class="module p-4 bg-white rotate-2 hover:rotate-0 transition-transform">
+
+                <div class="relative flex justify-end top-[20px]">
+                    <div class="module p-1 bg-white rotate-2 hover:rotate-0 transition-transform max-w-[520px]">
                         <img src="../images/team.png" alt="Team Connection"
                             class="w-full h-auto grayscale contrast-125 border border-black">
                     </div>
+
                     <div
                         class="absolute -z-10 -bottom-10 -right-10 w-40 h-40 bg-accent-color rounded-full mix-blend-multiply opacity-80">
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
@@ -95,51 +111,46 @@
             <div class="absolute top-14 left-0 w-16 h-2 bg-accent-color"></div>
 
             <!-- Grid -->
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-16 items-center"> <!-- New! -->
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-3 items-center">
 
                 <!-- Left Column -->
-                <div class="lg:col-span-2"> <!-- New! -->
+                <div class="lg:col-span-2">
                     <p class="font-mono text-sm tracking-widest mb-6 uppercase">
-                        The Hidden Advantage
+                        The Real Failure Mode
                     </p>
 
                     <h2 class="text-7xl font-bold uppercase leading-tight mb-10">
-                        UNLOCKING INDIE CREATIVITY<br>
-                        <span class="text-[#ff3300]">AT SCALE</span>
+                        GREAT GAMES<br>
+                        <span class="text-[#ff3300]">DON’T FAIL</span>
                     </h2>
 
                     <div class="w-full h-2 bg-black mb-10"></div>
 
-                    <p class="text-2xl font-medium leading-relaxed">
-                        The indie game world holds massive untapped
-                        <span class="font-bold underline decoration-[#ff3300] decoration-4">
-                            creative talent.
+                    <p class="text-4xl font-medium leading-relaxed">
+                        Ideas don’t fail.
+                        <span class="highlight-bar mt-2">
+                            Execution does.
                         </span>
-                        <br /> <!-- New! -->
-                        MeshPotato turns that hidden capacity into execution-ready teams.
                     </p>
                 </div>
 
                 <!-- Right Column -->
-                <div class="lg:col-span-1 module p-10 bg-white"> <!-- New! -->
-                    <h3 class="text-3xl font-bold mb-6">
-                        The Real Challenge
+                <div class="lg:col-span-2 module p-10 bg-white">
+                    <h3 class="text-4xl font-bold mb-6 uppercase">
+                        The Core Problem
                     </h3>
 
-                    <p class="text-xl leading-relaxed text-gray-700">
-                        Talent and creativity are not the bottlenecks.
+                    <p class="text-3xl leading-relaxed text-gray-700">
+                        Game development is not linear.
                     </p>
 
-                    <p class="text-xl leading-relaxed text-gray-700 mt-4">
-                        They fail because game development is a
-                        <span class="font-bold text-[#ff3300]">
-                            non-linear execution challenge
-                        </span>.
+                    <p class="text-2xl leading-relaxed text-gray-700 mt-4">
+                        The work grows faster than expected <br />beyond what one person can handle.
                     </p>
 
                     <div class="mt-8 border-t-4 border-black pt-6">
                         <p class="font-mono text-sm uppercase tracking-widest text-gray-500">
-                            Execution does not scale linearly with people
+                            Adding people late doesn’t make work move faster
                         </p>
                     </div>
                 </div>
@@ -149,48 +160,117 @@
     </div>
 
     <div class="slide" id="slide-3">
-        <!-- New! Click-anywhere overlay for Solo Trap -->
-        <div class="absolute inset-0 z-30 cursor-pointer" onclick="openModal(SOLO_TRAP_INDEX)">
-        </div>
+        <!-- Click-anywhere overlay for Solo Trap -->
+        <div class="absolute inset-0 z-30 cursor-pointer" onclick="openModal(SOLO_TRAP_INDEX)"></div>
+
         <span
             class="absolute top-10 right-10 font-mono text-sm bg-[#ff3300] text-white px-2 py-1 z-40 pointer-events-none">
             CLICK FOR DETAILS
         </span>
+
         <div class="w-full max-w-7xl">
-            <h2 class="text-7xl font-bold mb-12 uppercase border-b-4 border-black pb-4 inline-block">The Solo Trap</h2>
+            <h2 class="text-7xl font-bold mb-12 uppercase border-b-4 border-black pb-4 inline-block">
+                The Solo Trap
+            </h2>
+
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+
+                <!-- LEFT CONTENT -->
                 <div class="space-y-8">
+
                     <div class="module p-8 bg-white solo-trap-glow">
-                        <h3 class="text-3xl font-bold mb-4">Execution <span class="text-[#ff3300]">≠</span> Linear</h3>
+                        <h3 class="text-3xl font-bold mb-4">
+                            Solo works early
+                            <span class="text-[#ff3300]">—</span>
+                            then it breaks
+                        </h3>
+
                         <p class="text-xl leading-relaxed text-gray-700">
-                            Solo capacity is static. <br>
-                            Game complexity scales <span
-                                class="font-bold underline decoration-[#ff3300] decoration-4">exponentially</span>.
+                            The work grows faster than expected<br />
+                            beyond what one person can handle.
                         </p>
                     </div>
+
+                    <ul class="text-xl font-medium space-y-4">
+                        <li>Foundation set without team input</li>
+                        <li>Knowledge stays in one head</li>
+                        <li>Key decisions made before team forms</li>
+                        <li>Adding people late creates drag</li>
+                    </ul>
+
                     <p class="text-2xl font-bold border-l-8 border-[#ff3300] pl-6 py-2">
-                        Once timelines slip, recovery is impossible. Team formation must happen early.
+                        By the time help arrives, recovery is already hard.
                     </p>
+
                 </div>
+
+                <!-- RIGHT VISUAL -->
                 <div class="module p-0 h-96 relative bg-white flex items-end solo-trap-glow">
-                    <div class="absolute top-4 left-4 font-mono text-xs bg-black text-white px-2 py-1">THE BREAKING
-                        POINT</div>
+
+                    <!-- Title -->
+                    <div class="absolute top-4 left-4 font-mono text-xs bg-black text-white px-2 py-1">
+                        THE BREAKING POINT
+                    </div>
+
+                    <!-- Legend -->
+                    <div class="absolute top-4 right-4 text-xs font-mono bg-white border border-black p-2 space-y-1">
+                        <div class="flex items-center gap-2">
+                            <span class="block w-4 h-0.5 bg-[#ff3300]"></span>
+                            <span>PROJECT WORK</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="block w-4 h-0.5 border-t-2 border-dashed border-gray-600"></span>
+                            <span>SOLO CAPACITY</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="block w-4 h-3 bg-[#ff3300] opacity-20"></span>
+                            <span>UNMANAGEABLE WORK</span>
+                        </div>
+                    </div>
+
+                    <!-- Graph -->
                     <svg class="w-full h-full p-8" viewBox="0 0 400 250">
+
+                        <!-- Grid -->
                         <line stroke="#eee" stroke-width="1" x1="40" x2="380" y1="40" y2="40"></line>
                         <line stroke="#eee" stroke-width="1" x1="40" x2="380" y1="100" y2="100"></line>
                         <line stroke="#eee" stroke-width="1" x1="40" x2="380" y1="160" y2="160"></line>
+
+                        <!-- Axes -->
                         <line stroke="black" stroke-width="3" x1="40" x2="380" y1="220" y2="220"></line>
                         <line stroke="black" stroke-width="3" x1="40" x2="40" y1="220" y2="20"></line>
+
+                        <!-- Axis labels -->
                         <text font-family="Inter" font-size="10" font-weight="bold" x="350" y="240">TIME</text>
                         <text font-family="Inter" font-size="10" font-weight="bold" style="writing-mode: tb;" x="10"
-                            y="30">EFFORT</text>
-                        <path d="M 40 180 L 380 180" fill="none" stroke="#333" stroke-dasharray="5,5" stroke-width="2">
+                            y="30">
+                            WORK REQUIRED
+                        </text>
+
+                        <!-- Solo capacity line -->
+                        <path d="M 40 170 L 380 170" fill="none" stroke="#555" stroke-dasharray="5,5" stroke-width="2">
                         </path>
-                        <text fill="#666" font-family="Oswald" font-size="12" x="250" y="170">SOLO LIMIT</text>
-                        <path d="M 40 220 Q 200 210 380 20" fill="none" stroke="#ff3300" stroke-width="4"></path>
-                        <text fill="#ff3300" font-family="Oswald" font-size="14" font-weight="bold" x="280" y="50">SCOPE
-                            CREEP</text>
-                        <path d="M 250 180 L 380 30 L 380 180 Z" fill="#ff3300" opacity="0.1"></path>
+
+                        <text fill="#666" font-family="Oswald" font-size="12" x="250" y="160">
+                            SOLO CAPACITY
+                        </text>
+
+                        <!-- Project work curve -->
+                        <path d="M 40 220 Q 180 210 300 120 T 380 30" fill="none" stroke="#ff3300" stroke-width="4">
+                        </path>
+
+                        <!-- Overload region -->
+                        <path d="M 240 170 L 380 30 L 380 170 Z" fill="#ff3300" opacity="0.15"></path>
+
+                        <text fill="#ff3300" font-family="Oswald" font-size="14" font-weight="bold" x="255" y="80">
+                            BEYOND SOLO CAPACITY
+                        </text>
+
+                        <!-- Early phase label -->
+                        <text fill="#777" font-family="Inter" font-size="11" x="60" y="205">
+                            early development (solo works)
+                        </text>
+
                     </svg>
                 </div>
             </div>
@@ -203,33 +283,52 @@
                 <div class="h-4 w-4 bg-[#ff3300]"></div>
                 <h2 class="text-6xl font-bold uppercase m-0">Systemic Failure</h2>
             </div>
+
             <div class="grid grid-cols-1 md:grid-cols-2 gap-0 border-2 border-black">
+
+                <!-- ERROR 01 -->
                 <div class="bg-white p-12 border-b-2 md:border-b-0 md:border-r-2 border-black hover:bg-gray-50 transition-colors group cursor-pointer"
                     onclick="openModal(SOLO_TRAP_INDEX)">
                     <div class="flex justify-between items-start mb-6">
                         <span class="font-mono text-sm text-gray-500">ERROR_01</span>
                         <span class="material-symbols-outlined text-5xl text-[#ff3300]">timer_off</span>
                     </div>
-                    <h3 class="text-4xl font-bold mb-4 group-hover:translate-x-2 transition-transform">Too Late</h3>
-                    <p class="text-lg text-gray-700 font-medium">Teams form after architecture and timelines are locked.
+
+                    <h3 class="text-4xl font-bold mb-4 group-hover:translate-x-2 transition-transform">
+                        Too Late
+                    </h3>
+
+                    <p class="text-lg text-gray-700 font-medium">
+                        Teams form after core decisions are locked.
                     </p>
                 </div>
+
+                <!-- ERROR 02 -->
                 <div class="bg-white p-12 hover:bg-gray-50 transition-colors group">
                     <div class="flex justify-between items-start mb-6">
                         <span class="font-mono text-sm text-gray-500">ERROR_02</span>
                         <span class="material-symbols-outlined text-5xl text-[#ff3300]">group_off</span>
                     </div>
-                    <h3 class="text-4xl font-bold mb-4 group-hover:translate-x-2 transition-transform">Wrong Criteria
+
+                    <h3 class="text-4xl font-bold mb-4 group-hover:translate-x-2 transition-transform">
+                        Wrong Criteria
                     </h3>
-                    <p class="text-lg text-gray-700 font-medium">Teams form based on friendship rather than skill
-                        compatibility.</p>
+
+                    <p class="text-lg text-gray-700 font-medium">
+                        Teams form based on relationships, not execution fit.
+                    </p>
                 </div>
+
             </div>
+
             <div class="mt-16 bg-black text-white p-8 text-center">
-                <p class="text-3xl font-light font-serif italic">"Great teams are engineered, not stumbled upon."</p>
+                <p class="text-3xl font-light font-serif italic">
+                    "Great teams are engineered,not stumbled upon."
+                </p>
             </div>
         </div>
     </div>
+
 
     <div class="slide" id="slide-5">
         <div class="max-w-5xl w-full text-center">
@@ -241,9 +340,9 @@
                 </span>
             </h2>
             <p class="text-2xl font-medium mb-16 max-w-3xl mx-auto">
-                We convert individual talent into <span class="highlight-bar">shipping-capable</span> units through
-                data-driven formation.
+                We convert individual talent into <span class="highlight-bar">real teams that can finish games</span>.
             </p>
+
             <div class="flex flex-wrap justify-center gap-8">
                 <div class="module p-6 w-64 bg-white flex flex-col items-center gap-4 cursor-pointer"
                     onclick="openModal(servicesData.length - 3)">
@@ -271,7 +370,7 @@
             <div class="border-b-4 border-black mb-12 pb-2">
                 <h2 class="text-5xl font-bold uppercase">THE FORMATION ENGINE</h2>
                 <span class="font-light normal-case block mt-2 text-xl">
-                    Not a matching system. An execution framework.
+                    Not a matching system. A system for forming teams that actually finish games.
                 </span>
             </div>
 
@@ -285,9 +384,9 @@
                         <span class="material-symbols-outlined text-4xl mb-4">input</span>
                         <h3 class="text-2xl font-bold mb-4">Deep Profile</h3>
                         <ul class="list-square pl-4 space-y-2 font-medium">
-                            <li>Skill Verification</li>
-                            <li>Compatibility profiling</li>
-                            <li>Risk Tolerance</li>
+                            <li>Observed and declared intent</li>
+                            <li>Public footprint, roles, skills</li>
+                            <li>Short technical assessments</li>
                         </ul>
                     </div>
                 </div>
@@ -305,10 +404,10 @@
                         <span class="material-symbols-outlined text-4xl mb-4">settings</span>
                         <h3 class="text-2xl font-bold mb-4">The Match</h3>
                         <div
-                            class="bg-white text-black p-2 text-xs font-mono text-center font-bold border-2 border-black">
-                            OPTIMIZED FOR FULL ROLES
+                            class="bg-white text-black px-6 py-3 text-lg font-mono text-center font-bold border-2 border-black whitespace-nowrap">
+                            Complete teams from day one
                         </div>
-                        <p class="mt-4 text-sm font-medium">Opinionated, not restrictive</p>
+                        <p class="mt-4 text-lg font-medium">Opinionated guidance No forced matches
                     </div>
                 </div>
 
@@ -324,9 +423,9 @@
                         <span class="material-symbols-outlined text-4xl mb-4">rocket_launch</span>
                         <h3 class="text-2xl font-bold mb-4">Execution</h3>
                         <ul class="list-square pl-4 space-y-2 font-medium">
-                            <li>Ready to Build</li>
-                            <li>Defined Milestones</li>
-                            <li>Ship Capable</li>
+                            <li>Ready to start</li>
+                            <li>Clear milestones</li>
+                            <li>Able to finish</li>
                         </ul>
                     </div>
                 </div>
@@ -629,4 +728,5 @@
 
     <script src="js/script.js"></script>
 </body>
+
 </html>
