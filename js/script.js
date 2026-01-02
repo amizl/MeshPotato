@@ -256,6 +256,40 @@ servicesData.push({
         `
 });
 
+function toggleServiceAccordion(card) {
+    const index = card.dataset.serviceIndex;
+    const accordion = card.querySelector(".service-accordion");
+    const data = servicesData[index];
 
+    const isOpen = accordion.classList.contains("open");
+
+    // Close all others
+    document.querySelectorAll(".service-accordion").forEach(el => {
+        el.classList.remove("open");
+        el.classList.add("hidden");
+        el.innerHTML = "";
+    });
+
+    if (!isOpen) {
+        accordion.innerHTML = data.desc;
+        accordion.classList.remove("hidden");
+        accordion.classList.add("open");
+    }
+}
+function toggleServiceAccordion8(el) {
+    const content = el.querySelector('.service-accordion-content');
+    if (!content) return;
+
+    content.classList.toggle('open');
+}
+document.addEventListener("click", function (e) {
+    const details = e.target.closest("details");
+    if (!details) return;
+
+    // Prevent double toggle when clicking summary
+    if (e.target.tagName.toLowerCase() === "summary") return;
+
+    details.open = !details.open;
+});
 // Initialize Deck
 updateSlide();

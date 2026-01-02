@@ -78,9 +78,9 @@
                     <div class="w-full h-2 bg-black my-6"></div>
 
                     <h4 class="text-5xl font-light leading-tight uppercase">
-                        form real teams<br>
+                        from solo game creators<br>
                         <span class="highlight-bar mt-2">
-                            from solo game creators
+                            to real teams
                         </span>
                     </h4>
 
@@ -121,7 +121,7 @@
 
                     <h2 class="text-7xl font-bold uppercase leading-tight mb-10">
                         GREAT GAMES<br>
-                        <span class="text-[#ff3300]">DON’T FAIL</span>
+                        <span class="text-[#ff3300]">need a team</span>
                     </h2>
 
                     <div class="w-full h-2 bg-black mb-10"></div>
@@ -141,11 +141,11 @@
                     </h3>
 
                     <p class="text-3xl leading-relaxed text-gray-700">
-                        Game development is not linear.
+                        The deeper you go <br />the tougher it gets.
                     </p>
 
                     <p class="text-2xl leading-relaxed text-gray-700 mt-4">
-                        The work grows faster than expected <br />beyond what one person can handle.
+                        The work grows faster than expected beyond what one person can handle.
                     </p>
 
                     <div class="mt-8 border-t-4 border-black pt-6">
@@ -407,7 +407,7 @@
                             class="bg-white text-black px-6 py-3 text-lg font-mono text-center font-bold border-2 border-black whitespace-nowrap">
                             Complete teams from day one
                         </div>
-                        <p class="mt-4 text-lg font-medium">We provide the guidance<br/>The decisions are always yours
+                        <p class="mt-4 text-lg font-medium">We provide the guidance<br />The decisions are always yours
                     </div>
                 </div>
 
@@ -436,93 +436,227 @@
 
     <div class="slide" id="slide-7">
         <div class="w-full max-w-7xl h-full flex flex-col">
+
+            <!-- Header -->
             <div class="flex justify-between items-end mb-8 border-b-2 border-black pb-2">
                 <h2 class="text-5xl font-bold uppercase m-0">Platform Services</h2>
-                <span class="font-mono text-sm bg-[#ff3300] text-white px-2 py-1">CLICK FOR DETAILS</span>
+                <span class="font-mono text-sm bg-[#ff3300] text-white px-2 py-1">
+                    CLICK FOR DETAILS
+                </span>
             </div>
+
+            <!-- Services Grid -->
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4 flex-grow overflow-y-auto custom-scroll pr-2">
-                <div class="border-2 border-gray-200 p-6 hover:border-black hover:bg-white hover:shadow-[5px_5px_0px_#ff3300] transition-all cursor-pointer group bg-white"
-                    onclick="openModal(0)">
-                    <span class="material-symbols-outlined text-4xl mb-4 group-hover:text-[#ff3300]">rocket</span>
-                    <h3 class="font-bold text-xl leading-tight mb-2 uppercase">Execution & Launch</h3>
-                    <p class="text-xs font-mono text-gray-600 group-hover:text-black">Crowdfunding Deployment →</p>
+
+                <!-- 01 -->
+                <div class="border-2 border-gray-200 p-6 cursor-pointer group bg-white
+                        hover:border-black hover:bg-white hover:shadow-[5px_5px_0px_#ff3300] transition-all"
+                    data-service-index="0" onclick="toggleServiceAccordion(this)">
+                    <span class="material-symbols-outlined text-4xl mb-4 group-hover:text-[#ff3300]">
+                        rocket
+                    </span>
+                    <h3 class="font-bold text-xl mb-2 uppercase">Execution & Launch</h3>
+                    <p class="text-xs font-mono text-gray-600 group-hover:text-black">
+                        Crowdfunding Deployment →
+                    </p>
+                    <div class="service-accordion hidden mt-4 text-sm text-gray-700 leading-relaxed"></div>
                 </div>
-                <div class="border-2 border-gray-200 p-6 hover:border-black hover:bg-white hover:shadow-[5px_5px_0px_#ff3300] transition-all cursor-pointer group bg-white"
-                    onclick="openModal(1)">
-                    <span class="material-symbols-outlined text-4xl mb-4 group-hover:text-[#ff3300]">trophy</span>
-                    <h3 class="font-bold text-xl leading-tight mb-2 uppercase">Sponsored Projects</h3>
-                    <p class="text-xs font-mono text-gray-600 group-hover:text-black">Milestone Funding →</p>
+
+                <!-- 02 -->
+                <div class="border-2 border-gray-200 p-6 cursor-pointer group bg-white
+                        hover:border-black hover:shadow-[5px_5px_0px_#ff3300] transition-all" data-service-index="1"
+                    onclick="toggleServiceAccordion(this)">
+                    <span class="material-symbols-outlined text-4xl mb-4 group-hover:text-[#ff3300]">
+                        trophy
+                    </span>
+                    <h3 class="font-bold text-xl mb-2 uppercase">Sponsored Projects</h3>
+                    <p class="text-xs font-mono text-gray-600 group-hover:text-black">
+                        Milestone Funding →
+                    </p>
+                    <div class="service-accordion hidden mt-4 text-sm text-gray-700 leading-relaxed"></div>
                 </div>
-                <div class="border-2 border-gray-200 p-6 hover:border-black hover:bg-white hover:shadow-[5px_5px_0px_#ff3300] transition-all cursor-pointer group bg-white"
-                    onclick="openModal(2)">
-                    <span class="material-symbols-outlined text-4xl mb-4 group-hover:text-[#ff3300]">storefront</span>
-                    <h3 class="font-bold text-xl leading-tight mb-2 uppercase">Assets & Tools</h3>
-                    <p class="text-xs font-mono text-gray-600 group-hover:text-black">Internal Market →</p>
+
+                <!-- 03 -->
+                <div class="border-2 border-gray-200 p-6 cursor-pointer group bg-white
+                        hover:border-black hover:shadow-[5px_5px_0px_#ff3300] transition-all" data-service-index="2"
+                    onclick="toggleServiceAccordion(this)">
+                    <span class="material-symbols-outlined text-4xl mb-4 group-hover:text-[#ff3300]">
+                        storefront
+                    </span>
+                    <h3 class="font-bold text-xl mb-2 uppercase">Assets & Tools</h3>
+                    <p class="text-xs font-mono text-gray-600 group-hover:text-black">
+                        Internal Market →
+                    </p>
+                    <div class="service-accordion hidden mt-4 text-sm text-gray-700 leading-relaxed"></div>
                 </div>
-                <div class="border-2 border-gray-200 p-6 hover:border-black hover:bg-white hover:shadow-[5px_5px_0px_#ff3300] transition-all cursor-pointer group bg-white"
-                    onclick="openModal(3)">
-                    <span class="material-symbols-outlined text-4xl mb-4 group-hover:text-[#ff3300]">engineering</span>
-                    <h3 class="font-bold text-xl leading-tight mb-2 uppercase">Specialist Pool</h3>
-                    <p class="text-xs font-mono text-gray-600 group-hover:text-black">Mercenary Talent →</p>
+
+                <!-- 04 -->
+                <div class="border-2 border-gray-200 p-6 cursor-pointer group bg-white
+                        hover:border-black hover:shadow-[5px_5px_0px_#ff3300] transition-all" data-service-index="3"
+                    onclick="toggleServiceAccordion(this)">
+                    <span class="material-symbols-outlined text-4xl mb-4 group-hover:text-[#ff3300]">
+                        engineering
+                    </span>
+                    <h3 class="font-bold text-xl mb-2 uppercase">Specialist Pool</h3>
+                    <p class="text-xs font-mono text-gray-600 group-hover:text-black">
+                        Mercenary Talent →
+                    </p>
+                    <div class="service-accordion hidden mt-4 text-sm text-gray-700 leading-relaxed"></div>
                 </div>
-                <div class="border-2 border-gray-200 p-6 hover:border-black hover:bg-white hover:shadow-[5px_5px_0px_#ff3300] transition-all cursor-pointer group bg-white"
-                    onclick="openModal(4)">
-                    <span class="material-symbols-outlined text-4xl mb-4 group-hover:text-[#ff3300]">campaign</span>
-                    <h3 class="font-bold text-xl leading-tight mb-2 uppercase">Smart Visibility</h3>
-                    <p class="text-xs font-mono text-gray-600 group-hover:text-black">Triggered Ads →</p>
+
+                <!-- 05 -->
+                <div class="border-2 border-gray-200 p-6 cursor-pointer group bg-white
+                        hover:border-black hover:shadow-[5px_5px_0px_#ff3300] transition-all" data-service-index="4"
+                    onclick="toggleServiceAccordion(this)">
+                    <span class="material-symbols-outlined text-4xl mb-4 group-hover:text-[#ff3300]">
+                        campaign
+                    </span>
+                    <h3 class="font-bold text-xl mb-2 uppercase">Smart Visibility</h3>
+                    <p class="text-xs font-mono text-gray-600 group-hover:text-black">
+                        Triggered Ads →
+                    </p>
+                    <div class="service-accordion hidden mt-4 text-sm text-gray-700 leading-relaxed"></div>
                 </div>
-                <div class="border-2 border-gray-200 p-6 hover:border-black hover:bg-white hover:shadow-[5px_5px_0px_#ff3300] transition-all cursor-pointer group bg-white"
-                    onclick="openModal(5)">
-                    <span class="material-symbols-outlined text-4xl mb-4 group-hover:text-[#ff3300]">query_stats</span>
-                    <h3 class="font-bold text-xl leading-tight mb-2 uppercase">Player Signal</h3>
-                    <p class="text-xs font-mono text-gray-600 group-hover:text-black">Validated Demand →</p>
+
+                <!-- 06 -->
+                <div class="border-2 border-gray-200 p-6 cursor-pointer group bg-white
+                        hover:border-black hover:shadow-[5px_5px_0px_#ff3300] transition-all" data-service-index="5"
+                    onclick="toggleServiceAccordion(this)">
+                    <span class="material-symbols-outlined text-4xl mb-4 group-hover:text-[#ff3300]">
+                        query_stats
+                    </span>
+                    <h3 class="font-bold text-xl mb-2 uppercase">Player Signal</h3>
+                    <p class="text-xs font-mono text-gray-600 group-hover:text-black">
+                        Validated Demand →
+                    </p>
+                    <div class="service-accordion hidden mt-4 text-sm text-gray-700 leading-relaxed"></div>
                 </div>
-                <div class="border-2 border-gray-200 p-6 hover:border-black hover:bg-white hover:shadow-[5px_5px_0px_#ff3300] transition-all cursor-pointer group bg-white"
-                    onclick="openModal(6)">
-                    <span class="material-symbols-outlined text-4xl mb-4 group-hover:text-[#ff3300]">forum</span>
-                    <h3 class="font-bold text-xl leading-tight mb-2 uppercase">Structured Support</h3>
-                    <p class="text-xs font-mono text-gray-600 group-hover:text-black">Goal-Driven Ops →</p>
+
+                <!-- 07 -->
+                <div class="border-2 border-gray-200 p-6 cursor-pointer group bg-white
+                        hover:border-black hover:shadow-[5px_5px_0px_#ff3300] transition-all" data-service-index="6"
+                    onclick="toggleServiceAccordion(this)">
+                    <span class="material-symbols-outlined text-4xl mb-4 group-hover:text-[#ff3300]">
+                        forum
+                    </span>
+                    <h3 class="font-bold text-xl mb-2 uppercase">Structured Support</h3>
+                    <p class="text-xs font-mono text-gray-600 group-hover:text-black">
+                        Goal-Driven Ops →
+                    </p>
+                    <div class="service-accordion hidden mt-4 text-sm text-gray-700 leading-relaxed"></div>
                 </div>
-                <div class="border-2 border-gray-200 p-6 hover:border-black hover:bg-white hover:shadow-[5px_5px_0px_#ff3300] transition-all cursor-pointer group bg-white"
-                    onclick="openModal(7)">
-                    <span class="material-symbols-outlined text-4xl mb-4 group-hover:text-[#ff3300]">school</span>
-                    <h3 class="font-bold text-xl leading-tight mb-2 uppercase">Team Readiness</h3>
-                    <p class="text-xs font-mono text-gray-600 group-hover:text-black">Training Tools →</p>
+
+                <!-- 08 -->
+                <div class="border-2 border-gray-200 p-6 cursor-pointer group bg-white
+                        hover:border-black hover:shadow-[5px_5px_0px_#ff3300] transition-all" data-service-index="7"
+                    onclick="toggleServiceAccordion(this)">
+                    <span class="material-symbols-outlined text-4xl mb-4 group-hover:text-[#ff3300]">
+                        school
+                    </span>
+                    <h3 class="font-bold text-xl mb-2 uppercase">Team Readiness</h3>
+                    <p class="text-xs font-mono text-gray-600 group-hover:text-black">
+                        Training Tools →
+                    </p>
+                    <div class="service-accordion hidden mt-4 text-sm text-gray-700 leading-relaxed"></div>
                 </div>
+
             </div>
         </div>
     </div>
 
+
     <div class="slide" id="slide-8">
         <div class="max-w-6xl w-full flex flex-col md:flex-row gap-16 items-center">
+
+            <!-- LEFT: TEXT -->
             <div class="w-full md:w-1/2">
                 <h2 class="text-6xl font-bold uppercase mb-8">Hard to Copy</h2>
-                <p class="text-xl font-medium mb-8">We aren't a job board. We are the <span
-                        class="bg-[#ff3300] text-white px-2">Operating System</span>.</p>
+
+                <p class="text-xl font-medium mb-10">
+                    We are not a job board.<br />
+                    <span class="bg-[#ff3300] text-white px-2">
+                        We build game teams around projects
+                    </span>.
+                </p>
+
                 <div class="space-y-6">
-                    <div class="module p-6 flex items-center gap-6">
-                        <div class="text-5xl font-bold text-gray-200">1</div>
-                        <div>
-                            <h4 class="text-2xl font-bold">Data Moat</h4>
-                            <p class="text-sm">Proprietary data on team survival.</p>
+
+                    <!-- BLOCK 1 -->
+                    <div class="module p-6 cursor-pointer" onclick="toggleServiceAccordion8(this)">
+
+                        <div class="flex items-start gap-6">
+                            <div class="text-5xl font-bold text-gray-200 leading-none">1</div>
+                            <div>
+                                <h4 class="text-2xl font-bold mb-1">
+                                    Project-Defined Teams
+                                </h4>
+                                <p class="text-sm text-gray-500 font-mono">
+                                    Click to expand
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- ACCORDION CONTENT -->
+                        <div class="service-accordion-content mt-4">
+                            <p class="text-sm leading-relaxed">
+                                Every project starts with intent, not people.
+                                A project lead defines the game, scope, timeline,
+                                funding status, revenue share, and their own role.
+                            </p>
+                            <p class="text-sm leading-relaxed mt-3">
+                                From this, the system recommends the full team
+                                structure, required roles, and realistic timelines
+                                before hiring begins.
+                            </p>
                         </div>
                     </div>
-                    <div class="module p-6 flex items-center gap-6 bg-[#111] text-white border-white">
-                        <div class="text-5xl font-bold text-[#333]">2</div>
-                        <div>
-                            <h4 class="text-2xl font-bold">Infrastructure</h4>
-                            <p class="text-sm text-gray-400">Legal, contracts & assets lock-in.</p>
+
+                    <!-- BLOCK 2 -->
+                    <div class="module p-6 bg-[#111] text-white border-white cursor-pointer"
+                        onclick="toggleServiceAccordion8(this)">
+
+                        <div class="flex items-start gap-6">
+                            <div class="text-5xl font-bold text-[#333] leading-none">2</div>
+                            <div>
+                                <h4 class="text-2xl font-bold mb-1">
+                                    Role-Locked Matching
+                                </h4>
+                                <p class="text-sm text-gray-400 font-mono">
+                                    Click to expand
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- ACCORDION CONTENT -->
+                        <div class="service-accordion-content mt-4">
+                            <p class="text-sm text-gray-300 leading-relaxed">
+                                Projects are published with clear roles and constraints.
+                                The system recommends candidates and supports invitations
+                                and applications tied to specific roles.
+                            </p>
+                            <p class="text-sm text-gray-300 leading-relaxed mt-3">
+                                Once every role is confirmed, the team launches
+                                development together and execution support activates
+                                inside the same system.
+                            </p>
                         </div>
                     </div>
+
                 </div>
+
+                <p class="text-sm font-mono mt-8 text-gray-600">
+                    This cannot be copied modularly. Removing any step breaks the system.
+                </p>
             </div>
+
+            <!-- RIGHT: IMAGE -->
             <div class="w-full md:w-1/2">
                 <div class="module p-2 bg-white">
-                    <!-- <img alt="Moat" class="w-full h-auto grayscale contrast-125" go-data-src="/gen?prompt=abstract+geometric+fortress+swiss+style+red+black+white&aspect=4:3" src="blob:https://04865dx38q4ehmrhz5x874xy0dliyqhk3fjcddkeoobclykt80-h845251650.scf.usercontent.goog/0db48e4a-1ef5-412b-92d7-7b4662c69c4f" style=""> -->
-                    <img src="../images/Moat.png" alt="Moat"
+                    <img src="../images/Moat.png" alt="System moat"
                         class="w-full h-auto grayscale contrast-125 border border-black">
                 </div>
             </div>
+
         </div>
     </div>
 
@@ -531,55 +665,135 @@
 
         <div class="w-full max-w-7xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 border-2 border-black">
 
-            <div
-                class="p-8 border-b-2 md:border-r-2 border-black hover:bg-[#ff3300] hover:text-white transition-colors group">
-                <span class="material-symbols-outlined text-4xl mb-4">percent</span>
-                <h3 class="text-2xl font-bold mb-2 uppercase">Revenue Share</h3>
-                <p class="text-sm font-medium">
-                    Percentage of revenue from successfully shipped games.
+            <!-- Execution Framework Access -->
+            <details
+                class="group p-8 border-b-2 md:border-r-2 border-black hover:bg-[#ff3300] hover:text-white transition-colors">
+                <summary class="text-xl font-bold uppercase cursor-pointer list-none">
+                    Execution Framework Access
+                </summary>
+                <p class="mt-4 text-sm font-medium">
+                    Paid access to platform tools and execution systems. Subscription-based.
                 </p>
-            </div>
+            </details>
 
-            <div
-                class="p-8 border-b-2 lg:border-r-2 border-black hover:bg-[#ff3300] hover:text-white transition-colors group">
-                <span class="material-symbols-outlined text-4xl mb-4">groups</span>
-                <h3 class="text-2xl font-bold mb-2 uppercase">Team Deployment</h3>
-                <p class="text-sm font-medium">
-                    Fees for deploying pre-formed teams to external clients.
+            <!-- User Subscriptions -->
+            <details
+                class="group p-8 border-b-2 lg:border-r-2 border-black hover:bg-[#ff3300] hover:text-white transition-colors">
+                <summary class="text-xl font-bold uppercase cursor-pointer list-none">
+                    User Subscriptions
+                </summary>
+                <p class="mt-4 text-sm font-medium">
+                    Monthly fee per user or seat.
                 </p>
-            </div>
+            </details>
 
-            <div
-                class="p-8 border-b-2 md:border-r-0 border-black hover:bg-[#ff3300] hover:text-white transition-colors group">
-                <span class="material-symbols-outlined text-4xl mb-4">lock</span>
-                <h3 class="text-2xl font-bold mb-2 uppercase">Execution Framework</h3>
-                <p class="text-sm font-medium">
-                    Paid access to platform tools and execution systems.
+            <!-- Project Opening Fees -->
+            <details class="group p-8 border-b-2 border-black hover:bg-[#ff3300] hover:text-white transition-colors">
+                <summary class="text-xl font-bold uppercase cursor-pointer list-none">
+                    Project Opening Fees
+                </summary>
+                <p class="mt-4 text-sm font-medium">
+                    One-time fee paid by a team lead to open a project.
                 </p>
-            </div>
+            </details>
 
-            <div class="p-8 md:border-r-2 border-black hover:bg-[#ff3300] hover:text-white transition-colors group">
-                <span class="material-symbols-outlined text-4xl mb-4">handshake</span>
-                <h3 class="text-2xl font-bold mb-2 uppercase">Sponsored Projects</h3>
-                <p class="text-sm font-medium">
-                    Engine and tooling partners sponsoring execution-backed projects.
+            <!-- Revenue Share -->
+            <details
+                class="group p-8 border-b-2 md:border-r-2 border-black hover:bg-[#ff3300] hover:text-white transition-colors">
+                <summary class="text-xl font-bold uppercase cursor-pointer list-none">
+                    Revenue Share
+                </summary>
+                <p class="mt-4 text-sm font-medium">
+                    Percentage cut from revenue of successfully shipped games.
                 </p>
-            </div>
+            </details>
 
-            <div class="p-8 lg:border-r-2 border-black hover:bg-[#ff3300] hover:text-white transition-colors group">
-                <span class="material-symbols-outlined text-4xl mb-4">event</span>
-                <h3 class="text-2xl font-bold mb-2 uppercase">Events</h3>
-                <p class="text-sm font-medium">
-                    Conferences, summits, and ecosystem partnerships.
+            <!-- Team Deployment Fees -->
+            <details
+                class="group p-8 border-b-2 lg:border-r-2 border-black hover:bg-[#ff3300] hover:text-white transition-colors">
+                <summary class="text-xl font-bold uppercase cursor-pointer list-none">
+                    Team Deployment Fees
+                </summary>
+                <p class="mt-4 text-sm font-medium">
+                    Fees for deploying pre-formed or vetted teams to external clients.
                 </p>
-            </div>
+            </details>
 
-            <div class="p-8 bg-black text-white">
-                <h3 class="text-2xl font-bold mb-2 uppercase">Why This Works</h3>
-                <p class="text-sm font-medium">
-                    Revenue is tied to execution, not listings, ads, or hype.
+            <!-- Sponsored Projects -->
+            <details class="group p-8 border-b-2 border-black hover:bg-[#ff3300] hover:text-white transition-colors">
+                <summary class="text-xl font-bold uppercase cursor-pointer list-none">
+                    Sponsored Projects
+                </summary>
+                <p class="mt-4 text-sm font-medium">
+                    Third parties sponsor projects. Mesh Potato takes a percentage cut.
                 </p>
-            </div>
+            </details>
+
+            <!-- Events -->
+            <details class="group p-8 md:border-r-2 border-black hover:bg-[#ff3300] hover:text-white transition-colors">
+                <summary class="text-xl font-bold uppercase cursor-pointer list-none">
+                    Events
+                </summary>
+                <p class="mt-4 text-sm font-medium">
+                    Conferences, summits, demo days, and ecosystem partnerships.
+                </p>
+            </details>
+
+            <!-- Premium Execution Tools -->
+            <details class="group p-8 lg:border-r-2 border-black hover:bg-[#ff3300] hover:text-white transition-colors">
+                <summary class="text-xl font-bold uppercase cursor-pointer list-none">
+                    Premium Execution Tools
+                </summary>
+                <p class="mt-4 text-sm font-medium">
+                    Paid access to advanced execution features or priority systems.
+                </p>
+            </details>
+
+            <!-- Enterprise / Studio Licensing -->
+            <details class="group p-8 border-black hover:bg-[#ff3300] hover:text-white transition-colors">
+                <summary class="text-xl font-bold uppercase cursor-pointer list-none">
+                    Enterprise / Studio Licensing
+                </summary>
+                <p class="mt-4 text-sm font-medium">
+                    Bulk or organizational access for studios, publishers, or accelerators.
+                </p>
+            </details>
+
+            <!-- Marketplace Fees -->
+            <details
+                class="group p-8 border-t-2 border-black md:col-span-3 hover:bg-[#ff3300] hover:text-white transition-colors">
+                <summary class="text-xl font-bold uppercase cursor-pointer list-none text-center">
+                    Marketplace Fees
+                </summary>
+                <p class="mt-4 text-sm font-medium text-center">
+                    Percentage fee on assets, services, or tools sold through the platform.
+                </p>
+            </details>
+
+            <!-- Closing -->
+            <details class="group p-8 bg-black text-white md:col-span-3 cursor-pointer">
+                <summary class="text-4xl font-medium text-center list-none">
+                    Revenue is tied to execution and delivery, not listings, ads, or hype.
+                </summary>
+
+                <div class="mt-6 max-w-4xl mx-auto text-left text-sm font-medium space-y-4">
+                    <p>
+                        <strong>Listings</strong> are platforms that charge for visibility
+                        (profiles, postings, placement) regardless of whether anything gets built.
+                    </p>
+
+                    <p>
+                        <strong>Hype</strong> refers to monetizing attention, buzz, or pitches
+                        before real work happens.
+                    </p>
+
+                    <p>
+                        Mesh Potato only makes money when teams execute, deliver milestones,
+                        or ship real outcomes. If nothing gets done, the platform does not win.
+                    </p>
+                </div>
+            </details>
+
 
         </div>
     </div>
